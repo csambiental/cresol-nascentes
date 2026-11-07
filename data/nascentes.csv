@@ -1,41 +1,41 @@
 id,situacao,endereco,bairro_distrito,lat,lon,fonte
-N01,executada,Córrego Roseira,Londrina (área urbana),-23.356451,-51.144388,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N02,executada,Córrego Roseira,Londrina (área urbana),-23.35655,-51.144506,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N03,executada,Córrego Roseira,Londrina (área urbana),-23.356631,-51.144251,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N04,executada,Córrego Ouro Verde,Londrina (área urbana),-23.278703,-51.179495,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N05,executada,Córrego Baroré,Londrina (área urbana),-23.302804,-51.194002,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N06,executada,Córrego Guarujá,Londrina (área urbana),-23.328207,-51.151009,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N07,executada,Córrego Jerimú,Londrina (área urbana),-23.385613,-51.130093,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N08,executada,Córrego Jerimú,Londrina (área urbana),-23.38592,-51.130084,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N09,executada,Córrego Jerimú,Londrina (área urbana),-23.385902,-51.130103,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N10,executada,Horta Comunitária Nova Esperança,Londrina (área urbana),-23.389319,-51.114214,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N11,executada,Aterro Lago Igapó,Londrina (área urbana),-23.3226,-51.1798,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N12,executada,Aterro Lago Igapó,Londrina (área urbana),-23.322575,-51.179841,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N13,executada,Aterro Lago Igapó,Londrina (área urbana),-23.322085,-51.180568,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N14,executada,"Propriedade rural, distrito de Lerroville",Lerroville,-23.6883,-51.1173,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N15,executada,"Propriedade rural, distrito de Lerroville",Lerroville,-23.6954,-51.1113,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N16,executada,"Propriedade rural, distrito de Lerroville",Lerroville,-23.6952,-51.1096,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N17,executada,Conjunto Cafezal,Londrina (área urbana),-23.3655,-51.1542,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N18,executada,Conjunto Cafezal,Londrina (área urbana),-23.3656,-51.1546,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N19,executada,São Marcus,Londrina (área urbana),-23.3666,-51.1297,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N20,executada,Ernani Moura Lima,Londrina (área urbana),-23.3295,-51.1092,"Simulação sobre pontos públicos (SEMA Londrina, 2025)"
-N21,em_analise,"Estrada rural, distrito de Warta (localização simulada)",Warta,-23.214281,-51.229456,Simulação
-N22,em_analise,"Estrada rural, distrito de Warta (localização simulada)",Warta,-23.1793,-51.183402,Simulação
-N23,em_analise,"Estrada rural, distrito de São Luiz (localização simulada)",São Luiz,-23.357825,-51.278568,Simulação
-N24,em_analise,"Estrada rural, distrito de São Luiz (localização simulada)",São Luiz,-23.371543,-51.254325,Simulação
-N25,em_analise,"Estrada rural, distrito de Espírito Santo (localização simulada)",Espírito Santo,-23.397021,-51.251275,Simulação
-N26,em_analise,"Estrada rural, distrito de Espírito Santo (localização simulada)",Espírito Santo,-23.415394,-51.21515,Simulação
-N27,em_analise,"Estrada rural, distrito de Maravilha (localização simulada)",Maravilha,-23.418539,-51.035504,Simulação
-N28,em_analise,"Estrada rural, distrito de Maravilha (localização simulada)",Maravilha,-23.386095,-51.081535,Simulação
-N29,em_analise,"Estrada rural, distrito de Irerê (localização simulada)",Irerê,-23.44702,-51.109571,Simulação
-N30,em_analise,"Estrada rural, distrito de Irerê (localização simulada)",Irerê,-23.446556,-51.093894,Simulação
-N31,em_analise,"Estrada rural, distrito de Paiquerê (localização simulada)",Paiquerê,-23.529292,-51.06109,Simulação
-N32,em_analise,"Estrada rural, distrito de Paiquerê (localização simulada)",Paiquerê,-23.502725,-51.06251,Simulação
-N33,em_analise,"Estrada rural, distrito de Guaravera (localização simulada)",Guaravera,-23.614945,-51.176078,Simulação
-N34,em_analise,"Estrada rural, distrito de Lerroville (localização simulada)",Lerroville,-23.724952,-51.122,Simulação
-N35,em_analise,"Estrada rural, distrito de Lerroville (localização simulada)",Lerroville,-23.717545,-51.088377,Simulação
-N36,nao_apta,"Estrada rural, distrito de Warta (localização simulada)",Warta,-23.222618,-51.18495,Simulação
-N37,nao_apta,"Estrada rural, distrito de Maravilha (localização simulada)",Maravilha,-23.389764,-51.0678,Simulação
-N38,nao_apta,"Estrada rural, distrito de Paiquerê (localização simulada)",Paiquerê,-23.547947,-51.065534,Simulação
-N39,nao_apta,"Estrada rural, distrito de Guaravera (localização simulada)",Guaravera,-23.627979,-51.168869,Simulação
-N40,nao_apta,"Estrada rural, distrito de São Luiz (localização simulada)",São Luiz,-23.344333,-51.284044,Simulação
+N01,executada,Córrego Roseira,Londrina (área urbana),-23.356451,-51.144388,Localização pública – SEMA Londrina (2025)
+N02,executada,Córrego Roseira,Londrina (área urbana),-23.35655,-51.144506,Localização pública – SEMA Londrina (2025)
+N03,executada,Córrego Roseira,Londrina (área urbana),-23.356631,-51.144251,Localização pública – SEMA Londrina (2025)
+N04,executada,Córrego Ouro Verde,Londrina (área urbana),-23.278703,-51.179495,Localização pública – SEMA Londrina (2025)
+N05,executada,Córrego Baroré,Londrina (área urbana),-23.302804,-51.194002,Localização pública – SEMA Londrina (2025)
+N06,executada,Córrego Guarujá,Londrina (área urbana),-23.328207,-51.151009,Localização pública – SEMA Londrina (2025)
+N07,executada,Córrego Jerimú,Londrina (área urbana),-23.385613,-51.130093,Localização pública – SEMA Londrina (2025)
+N08,executada,Córrego Jerimú,Londrina (área urbana),-23.38592,-51.130084,Localização pública – SEMA Londrina (2025)
+N09,executada,Córrego Jerimú,Londrina (área urbana),-23.385902,-51.130103,Localização pública – SEMA Londrina (2025)
+N10,executada,Horta Comunitária Nova Esperança,Londrina (área urbana),-23.389319,-51.114214,Localização pública – SEMA Londrina (2025)
+N11,executada,Aterro Lago Igapó,Londrina (área urbana),-23.3226,-51.1798,Localização pública – SEMA Londrina (2025)
+N12,executada,Aterro Lago Igapó,Londrina (área urbana),-23.322575,-51.179841,Localização pública – SEMA Londrina (2025)
+N13,executada,Aterro Lago Igapó,Londrina (área urbana),-23.322085,-51.180568,Localização pública – SEMA Londrina (2025)
+N14,executada,"Propriedade rural, distrito de Lerroville",Lerroville,-23.6883,-51.1173,Localização pública – SEMA Londrina (2025)
+N15,executada,"Propriedade rural, distrito de Lerroville",Lerroville,-23.6954,-51.1113,Localização pública – SEMA Londrina (2025)
+N16,executada,"Propriedade rural, distrito de Lerroville",Lerroville,-23.6952,-51.1096,Localização pública – SEMA Londrina (2025)
+N17,executada,Conjunto Cafezal,Londrina (área urbana),-23.3655,-51.1542,Localização pública – SEMA Londrina (2025)
+N18,executada,Conjunto Cafezal,Londrina (área urbana),-23.3656,-51.1546,Localização pública – SEMA Londrina (2025)
+N19,executada,São Marcus,Londrina (área urbana),-23.3666,-51.1297,Localização pública – SEMA Londrina (2025)
+N20,executada,Ernani Moura Lima,Londrina (área urbana),-23.3295,-51.1092,Localização pública – SEMA Londrina (2025)
+N21,em_analise,Córrego do Topo – Atrás do Jd. Santo André,Bacia Ribeirão Lindóia,-23.269,-51.2008,"Laudo Projeto Broto d'Água, ponto 9"
+N22,em_analise,Córrego Cafezal – Alexandre Urbanas,Bacia Ribeirão Limoeiro,-23.3127,-51.1088,"Laudo Projeto Broto d'Água, ponto 24"
+N23,em_analise,Córrego Capivara – Próx. ao Shopping Catuaí,Bacia Ribeirão Cambé,-23.3386,-51.1829,"Laudo Projeto Broto d'Água, ponto 26"
+N24,em_analise,Córrego Gabiroba – Portal de Versalhes,Bacia Cafezal / Esperança,-23.3334,-51.1957,"Laudo Projeto Broto d'Água, ponto 40"
+N25,em_analise,Córrego Mosel – Heimtal,Bacia Rio Jacutinga,-23.2483,-51.1553,"Laudo Projeto Broto d'Água, ponto 1"
+N26,em_analise,Córrego Veado – Jardim da Saudade,Bacia Ribeirão Lindóia,-23.2644,-51.163,"Laudo Projeto Broto d'Água, ponto 6"
+N27,em_analise,Córrego Sem Nome – Jardim Maria Lúcia,Bacia Ribeirão Lindóia,-23.2772,-51.2151,"Laudo Projeto Broto d'Água, ponto 10"
+N28,em_analise,Córrego Cacique – Próximo à Cacique,Bacia Ribeirão Cambé,-23.293,-51.2159,"Laudo Projeto Broto d'Água, ponto 28"
+N29,em_analise,Arroio Primavera (Água Primavera) – Jardim Catuaí,Bacia Rio Jacutinga,-23.2539,-51.1349,"Laudo Projeto Broto d'Água, ponto 2"
+N30,em_analise,Córrego Pirapózinho – Atrás do Conj. Vivi Xavier,Bacia Rio Jacutinga,-23.2545,-51.1685,"Laudo Projeto Broto d'Água, ponto 4"
+N31,em_analise,Córrego João Paz – Conjunto João Paz,Bacia Ribeirão Lindóia,-23.267,-51.1405,"Laudo Projeto Broto d'Água, ponto 12"
+N32,em_analise,Córrego Colina Verde – Conjunto Água Fresca,Bacia Ribeirão Cambé,-23.3256,-51.1858,"Laudo Projeto Broto d'Água, ponto 25"
+N33,em_analise,Córrego do Carambeí – Nova Conquista,Bacia Ribeirão Cambé,-23.309623,-51.108547,"Laudo Projeto Broto d'Água, ponto 36"
+N34,em_analise,Córrego Água do Tatu – Jardim Alphaville,Bacia Cafezal / Esperança,-23.353,-51.1846,"Laudo Projeto Broto d'Água, ponto 41"
+N35,em_analise,Nascente do Limoeiro – Atrás do aeroporto,Bacia Ribeirão Limoeiro,-23.3281,-51.1334,"Laudo Projeto Broto d'Água, ponto 22"
+N36,nao_apta,Córrego Cabrinha – Horta do Violim,Bacia Ribeirão Lindóia,-23.2635,-51.1513,"Laudo Projeto Broto d'Água, ponto 7"
+N37,nao_apta,Córrego Bom Retiro – Vila Portuguesa,Bacia Ribeirão Quati,-23.2932,-51.1936,"Laudo Projeto Broto d'Água, ponto 14"
+N38,nao_apta,Córrego Rubi – Jardim Dom Bosco,Bacia Ribeirão Cambé,-23.3063,-51.1835,"Laudo Projeto Broto d'Água, ponto 31"
+N39,nao_apta,Córrego do Leme – Zerão,Bacia Ribeirão Cambé,-23.3234,-51.1637,"Laudo Projeto Broto d'Água, ponto 35"
+N40,nao_apta,Córrego Saltinho – Cafezal,Bacia Cafezal / Esperança,-23.3715,-51.1396,"Laudo Projeto Broto d'Água, ponto 37"

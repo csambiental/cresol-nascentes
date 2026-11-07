@@ -2,13 +2,15 @@
 
 Mapa demonstrativo de controle e transparência de nascentes protegidas em Londrina e região.
 
-**Este repositório é uma simulação.** As situações dos pontos são ilustrativas e as localizações rurais são fictícias.
+**Este repositório é uma simulação.** As localizações são reais; as situações "em análise" e "não apta" são ilustrativas.
 
 | Situação | Pontos | Origem das localizações |
 |---|---|---|
 | Executadas | 20 | Pontos públicos divulgados pela Secretaria Municipal do Ambiente de Londrina (2025) |
-| Em análise | 15 | Simuladas em distritos rurais |
-| Não aptas | 5 | Simuladas em distritos rurais |
+| Em análise | 15 | Laudo do Projeto Broto d'Água (pontos 1, 2, 4, 6, 9, 10, 12, 22, 24, 25, 26, 28, 36, 40, 41) |
+| Não aptas | 5 | Laudo do Projeto Broto d'Água – nascentes canalizadas (pontos 7, 14, 31, 35, 37) |
+
+Pontos do laudo que coincidem com nascentes já executadas pela SEMA não foram repetidos.
 
 ## Arquivos
 
