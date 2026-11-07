@@ -1,30 +1,28 @@
 # Nascentes de Londrina – simulação
 
-Mapa demonstrativo de controle e transparência de nascentes protegidas em Londrina e região.
+Mapa demonstrativo de controle e transparência das nascentes vistoriadas em Londrina.
 
-**Este repositório é uma simulação.** As localizações são reais; as situações "em análise" e "não apta" são ilustrativas.
+**Este repositório é uma simulação.** Os 42 pontos, as coordenadas e as fichas (bacia, bairro, diagnóstico, recomendações e laudo fotográfico) foram transcritos do laudo de vistoria do Projeto Broto d'Água. As situações são ilustrativas.
 
-| Situação | Pontos | Origem das localizações |
-|---|---|---|
-| Executadas | 20 | Pontos públicos divulgados pela Secretaria Municipal do Ambiente de Londrina (2025) |
-| Em análise | 15 | Laudo do Projeto Broto d'Água (pontos 1, 2, 4, 6, 9, 10, 12, 22, 24, 25, 26, 28, 36, 40, 41) |
-| Não aptas | 5 | Laudo do Projeto Broto d'Água – nascentes canalizadas (pontos 7, 14, 31, 35, 37) |
+| Situação | Pontos |
+|---|---|
+| Executadas | 20 |
+| Em análise | 15 |
+| Não aptas | 5 (nascentes canalizadas: 7, 14, 31, 35, 37) |
+| Localização a confirmar | 1 (ponto 39: a coordenada do laudo repete a do ponto 36; usada posição aproximada na UEL) |
+| Sem coordenada | 1 (ponto 13: ficha não disponível) |
 
-| Vistoriadas (laudo) | 22 | Demais pontos do laudo do Projeto Broto d'Água |
-
-Os 42 pontos do laudo estão na base. O ponto 13 (Córrego Ibiá) não tem coordenada no laudo e não aparece no mapa. O ponto 39 (Córrego Cebolão, UEL) usa localização aproximada, porque a coordenada do laudo repete a do ponto 36.
-
-Situações aceitas: `executada`, `em_analise`, `nao_apta`, `vistoriada`.
+Os pontos 17 e 21 têm a mesma coordenada no laudo e aparecem sobrepostos.
 
 ## Arquivos
 
-- `index.html` – mapa (satélite ou mapa de ruas), filtros por situação e lista de nascentes
-- `data/nascentes.csv` – um ponto por linha: `id, situacao, endereco, bairro_distrito, lat, lon, fonte`
+- `index.html` – mapa (satélite ou ruas), filtros por situação, lista dos pontos e ficha completa de cada nascente
+- `data/nascentes.json` – um registro por ponto: `ponto, nome, bacia, bairro, lat, lon, situacao, diagnostico[], recomendacoes[], laudo_fotografico, nota`
 
-
+Situações aceitas: `executada`, `em_analise`, `nao_apta`, `a_confirmar`, `sem_coordenada`.
 
 ## Ver o mapa
 
-Settings › Pages › Branch `main`, pasta `/`. O mapa fica em `https://csambiental.github.io/cresol-nascentes/`.
+https://csambiental.github.io/cresol-nascentes/
 
 Nenhum dado pessoal é publicado neste repositório.

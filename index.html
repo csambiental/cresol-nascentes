@@ -8,86 +8,116 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Public+Sans:wght@400;600;700&display=swap">
 <style>
 :root{--bg:#0E2A21;--panel:#13352A;--fg:#F2F5EF;--muted:#A9C4B8;--line:#24493C;--accent:#5FD3C6;
-  --executada:#3FB950;--em_analise:#F2C14E;--nao_apta:#E5534B;--vistoriada:#8FB3C9}
+  --executada:#3FB950;--em_analise:#F2C14E;--nao_apta:#E5534B;--a_confirmar:#B48CDB;--sem_coordenada:#7E8C86}
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
-body{background:var(--bg);color:var(--fg);font:15px/1.5 "Public Sans",system-ui,sans-serif;display:grid;grid-template-columns:340px 1fr;grid-template-rows:100%}
-@media (max-width:800px){body{grid-template-columns:1fr;grid-template-rows:auto 65vh}aside{order:2}}
-aside{background:var(--panel);overflow:auto;padding:22px 20px;display:flex;flex-direction:column;gap:18px;border-right:1px solid var(--line)}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 "Public Sans",system-ui,sans-serif;display:grid;grid-template-columns:380px 1fr;grid-template-rows:100%}
+@media (max-width:800px){body{grid-template-columns:1fr;grid-template-rows:auto 60vh}aside{order:2}}
+aside{background:var(--panel);overflow:auto;padding:22px 20px;display:flex;flex-direction:column;gap:16px;border-right:1px solid var(--line)}
 #map{height:100%;min-height:360px}
 h1{font:900 26px/1.1 Archivo,"Arial Narrow",sans-serif;margin:0}
+h2{font:800 15px Archivo,sans-serif;margin:0}
 .eyebrow{font:700 11px "Public Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 .sim{border:1px dashed var(--accent);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--muted)}
 .box{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px}
-.box h2{font:800 15px Archivo,sans-serif;margin:0}
-.legend label{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:15px}
+.legend label{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px}
 .legend input{accent-color:var(--accent)}
-.dot{width:14px;height:14px;border-radius:50%;flex:none;border:2px solid #0b1d16}
-.n{margin-left:auto;font:700 18px Archivo,sans-serif;font-variant-numeric:tabular-nums}
-.bar{display:flex;height:12px;border-radius:6px;overflow:hidden}
-.list{display:grid;gap:4px;max-height:300px;overflow:auto}
+.dot{width:13px;height:13px;border-radius:50%;flex:none;border:2px solid #0b1d16}
+.n{margin-left:auto;font:700 17px Archivo,sans-serif;font-variant-numeric:tabular-nums}
+.bar{display:flex;height:10px;border-radius:5px;overflow:hidden}
+.list{display:grid;gap:2px;max-height:280px;overflow:auto}
 .item{display:flex;gap:10px;align-items:center;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:13px;border:0;background:none;color:inherit;text-align:left;width:100%}
-.item:hover,.item:focus-visible{background:var(--line);outline:none}
+.item:hover,.item:focus-visible,.item[aria-current="true"]{background:var(--line);outline:none}
+.item b{font-variant-numeric:tabular-nums;min-width:22px;display:inline-block}
 .muted{color:var(--muted);font-size:12px}
+#ficha[hidden]{display:none}
+#ficha .top{display:flex;justify-content:space-between;gap:8px;align-items:start}
+#ficha h3{margin:0;font:800 19px/1.2 Archivo,sans-serif}
+#ficha dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13px}
+#ficha dt{color:var(--muted)}
+#ficha dd{margin:0}
+#ficha h4{margin:6px 0 2px;font:700 12px "Public Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+#ficha ul{margin:0;padding-left:18px;font-size:13.5px;display:grid;gap:3px}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;color:#0b1d16}
+.close{background:none;border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:2px 9px;cursor:pointer;font:600 13px "Public Sans",sans-serif}
+.nota{font-size:12.5px;color:#F2C14E}
+a{color:var(--accent)}
 .leaflet-popup-content{font:13px/1.45 "Public Sans",sans-serif}
-.leaflet-popup-content h3{margin:0 0 4px;font:800 15px Archivo,sans-serif}
-.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;color:#0b1d16;margin-bottom:6px}
+.leaflet-popup-content h3{margin:0 0 2px;font:800 14px Archivo,sans-serif}
 </style>
 </head>
 <body>
 <aside>
   <div>
-    <div class="eyebrow">Londrina e região · Paraná</div>
+    <div class="eyebrow">Londrina · Paraná</div>
     <h1>Nascentes de Londrina</h1>
   </div>
-  <div class="sim"><b>Simulação.</b> Mapa demonstrativo de controle e transparência. As localizações são reais; as situações são ilustrativas.</div>
+  <div class="sim"><b>Simulação.</b> Os 42 pontos e as fichas são do laudo do Projeto Broto d'Água. As situações (executada, em análise, não apta) são ilustrativas, para demonstrar o controle e a transparência.</div>
+
+  <div class="box" id="ficha" hidden aria-live="polite"></div>
+
   <div class="box">
     <h2>Situação</h2>
     <div class="bar" id="bar"></div>
     <div class="legend" id="legend"></div>
   </div>
   <div class="box">
-    <h2>Nascentes</h2>
+    <h2>Pontos do laudo</h2>
     <div class="list" id="list"></div>
   </div>
-  <div class="muted">Localizações: pontos públicos da Secretaria Municipal do Ambiente de Londrina (2025) e laudo do Projeto Broto d'Água. Sem dados pessoais.</div>
+  <div class="muted">Fonte: laudo de vistoria do Projeto Broto d'Água, Londrina. Coordenadas e fichas transcritas do documento original. Sem dados pessoais.</div>
 </aside>
 <div id="map" role="region" aria-label="Mapa das nascentes"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const SIT={executada:"Executadas",em_analise:"Em análise",nao_apta:"Não aptas",vistoriada:"Vistoriadas (laudo)"};
+const SIT={executada:"Executadas",em_analise:"Em análise",nao_apta:"Não aptas",a_confirmar:"Localização a confirmar",sem_coordenada:"Sem coordenada"};
 const col=k=>getComputedStyle(document.documentElement).getPropertyValue('--'+k).trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function parseCSV(t){const L=t.trim().split(/\r?\n/).map(l=>{const o=[];let f='',q=false;for(const c of l){if(q){if(c=='"')q=false;else f+=c}else if(c=='"')q=true;else if(c==','){o.push(f);f=''}else f+=c}o.push(f);return o});const h=L.shift();return L.map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
-
-const map=L.map('map').setView([-23.42,-51.15],10);
+const map=L.map('map').setView([-23.31,-51.16],12);
 const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagem © Esri, Maxar, Earthstar Geographics'});
 const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'});
 sat.addTo(map);L.control.layers({'Satélite':sat,'Mapa':osm},null).addTo(map);
 const groups={};Object.keys(SIT).forEach(k=>groups[k]=L.layerGroup().addTo(map));
+const on=Object.fromEntries(Object.keys(SIT).map(k=>[k,true]));
+let pts=[],marks={};
 
-fetch('data/nascentes.csv').then(r=>r.text()).then(t=>{
-  const pts=parseCSV(t).filter(p=>p.lat&&p.lon);const items=[];
-  pts.forEach(p=>{
-    const c=col(p.situacao);
-    const m=L.circleMarker([+p.lat,+p.lon],{radius:8,color:'#0b1d16',weight:2,fillColor:c,fillOpacity:.95});
-    m.bindPopup(`<span class="pill" style="background:${c}">${esc(SIT[p.situacao])}</span><h3>${esc(p.id)}</h3><div>${esc(p.endereco)}</div><div style="color:#555">${esc(p.bairro_distrito)}</div><div style="margin-top:4px;color:#555;font-size:12px">${esc(p.fonte)}</div><div style="margin-top:6px"><a href="https://www.google.com/maps?q=${p.lat},${p.lon}" target="_blank" rel="noopener">Abrir no Google Maps</a></div>`);
-    m.addTo(groups[p.situacao]);items.push({p,m});
+function ficha(p){
+  const f=document.getElementById('ficha');f.hidden=false;
+  const li=a=>a.length?`<ul>${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'<div class="muted">Não informado na ficha.</div>';
+  f.innerHTML=`<div class="top"><div><span class="pill" style="background:${col(p.situacao)}">${esc(SIT[p.situacao])}</span>
+    <h3>${p.ponto} – ${esc(p.nome)}</h3></div><button class="close" type="button" id="fechar" aria-label="Fechar ficha">Fechar</button></div>
+    <dl><dt>Bacia</dt><dd>${esc(p.bacia)}</dd><dt>Bairro</dt><dd>${esc(p.bairro||'—')}</dd>
+    <dt>Coordenadas</dt><dd>${p.lat!=null?`<a href="https://www.google.com/maps?q=${p.lat},${p.lon}" target="_blank" rel="noopener">${p.lat}, ${p.lon}</a>`:'—'}</dd>
+    <dt>Laudo fotográfico</dt><dd>${esc(p.laudo_fotografico||'—')}</dd></dl>
+    ${p.nota?`<div class="nota">${esc(p.nota)}</div>`:''}
+    <h4>Diagnóstico</h4>${li(p.diagnostico)}<h4>Recomendações</h4>${li(p.recomendacoes)}`;
+  document.getElementById('fechar').onclick=()=>{f.hidden=true;list()};
+  document.querySelectorAll('.item').forEach(b=>b.setAttribute('aria-current',b.dataset.p==p.ponto));
+  f.scrollIntoView({block:'nearest'});
+}
+
+fetch('data/nascentes.json').then(r=>r.json()).then(d=>{
+  pts=d;
+  pts.filter(p=>p.lat!=null).forEach(p=>{
+    const m=L.circleMarker([p.lat,p.lon],{radius:9,color:'#0b1d16',weight:2,fillColor:col(p.situacao),fillOpacity:.95});
+    m.bindTooltip(`${p.ponto} – ${esc(p.nome)}`);
+    m.on('click',()=>ficha(p));
+    m.addTo(groups[p.situacao]);marks[p.ponto]=m;
   });
-  map.fitBounds(L.featureGroup(items.map(x=>x.m)).getBounds().pad(.08));
+  map.fitBounds(L.featureGroup(Object.values(marks)).getBounds().pad(.06));
   const cnt=k=>pts.filter(p=>p.situacao===k).length;
   document.getElementById('bar').innerHTML=Object.keys(SIT).map(k=>`<span style="flex:${cnt(k)};background:${col(k)}"></span>`).join('');
   const lg=document.getElementById('legend');
-  Object.entries(SIT).forEach(([k,l])=>{const lab=document.createElement('label');
+  Object.entries(SIT).forEach(([k,l])=>{if(!cnt(k))return;const lab=document.createElement('label');
     lab.innerHTML=`<input type="checkbox" id="f-${k}" checked><span class="dot" style="background:${col(k)}"></span>${l}<span class="n">${cnt(k)}</span>`;
-    lab.querySelector('input').onchange=e=>{e.target.checked?groups[k].addTo(map):map.removeLayer(groups[k]);list()};lg.appendChild(lab)});
-  function list(){const el=document.getElementById('list');el.innerHTML='';
-    items.filter(x=>map.hasLayer(groups[x.p.situacao])).forEach(({p,m})=>{const b=document.createElement('button');b.className='item';b.type='button';
-      b.innerHTML=`<span class="dot" style="background:${col(p.situacao)}"></span><span><b>${esc(p.id)}</b> ${esc(p.endereco)}</span>`;
-      b.onclick=()=>{map.setView(m.getLatLng(),15);m.openPopup()};el.appendChild(b)})}
+    lab.querySelector('input').onchange=e=>{on[k]=e.target.checked;on[k]?groups[k].addTo(map):map.removeLayer(groups[k]);list()};lg.appendChild(lab)});
   list();
 });
+function list(){const el=document.getElementById('list');el.innerHTML='';
+  pts.filter(p=>on[p.situacao]).forEach(p=>{const b=document.createElement('button');b.className='item';b.type='button';b.dataset.p=p.ponto;
+    b.innerHTML=`<span class="dot" style="background:${col(p.situacao)}"></span><span><b>${p.ponto}</b> ${esc(p.nome)}<br><span class="muted">${esc(p.bairro||'sem ficha')}</span></span>`;
+    b.onclick=()=>{if(marks[p.ponto])map.setView(marks[p.ponto].getLatLng(),16);ficha(p)};el.appendChild(b)})}
 </script>
 </body>
 </html>

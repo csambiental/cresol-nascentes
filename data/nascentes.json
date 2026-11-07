@@ -1,0 +1,946 @@
+[
+ {
+  "ponto": 1,
+  "nome": "Córrego Mosel",
+  "bacia": "Ribeirão Jacutinga – Rio Jacutinga",
+  "bairro": "Heimtal",
+  "lat": -23.2483,
+  "lon": -51.1553,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana",
+   "Nascente canalizada",
+   "Área cercada",
+   "Área parcialmente recuperada com espécies nativas",
+   "Ausência de espécies exóticas invasoras arbóreas na parte superior da área",
+   "Presença de animais de grande porte em área urbana (cavalos)",
+   "Existência de erosões",
+   "Presença de capim braquiária"
+  ],
+  "recomendacoes": [
+   "Fiscalização SEMA",
+   "Intervenção de obras para reparo das erosões",
+   "Controle do capim com roçagem",
+   "Plantio de mudas, na área acima da mata, com coroamento ao redor das mesmas"
+  ],
+  "laudo_fotografico": "Anexo A – P1",
+  "nota": ""
+ },
+ {
+  "ponto": 2,
+  "nome": "Arroio Primavera (Água Primavera)",
+  "bacia": "Ribeirão Jacutinga – Rio Jacutinga",
+  "bairro": "Jardim Catuaí",
+  "lat": -23.2539,
+  "lon": -51.1349,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana",
+   "Existência de erosões",
+   "Há descarte irregular de esgoto",
+   "Galerias danificadas"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Intervenção de obras para reparo de galerias"
+  ],
+  "laudo_fotografico": "Anexo A – P2",
+  "nota": ""
+ },
+ {
+  "ponto": 3,
+  "nome": "Córrego Poço Fundo (Poço Frio)",
+  "bacia": "Ribeirão Jacutinga – Rio Jacutinga",
+  "bairro": "Fundos do Conjunto José Giordano",
+  "lat": -23.2565,
+  "lon": -51.1804,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbana",
+   "Nascente canalizada",
+   "Presença de ocupação irregular em Área de Preservação Permanente (APP) (terreno público ou privado?)",
+   "Presença de animais de médio e grande porte em área urbana (cavalos)",
+   "Existência de descarte irregular de resíduos no local",
+   "Existência de erosões",
+   "Presença de exótica: árvores frutíferas",
+   "Presença de exótica invasora: Leucena"
+  ],
+  "recomendacoes": [
+   "Ação MP",
+   "Fiscalização SEMA",
+   "Intervenção de obras para reparo das erosões",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle das espécies invasoras",
+   "Plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo A – P3",
+  "nota": ""
+ },
+ {
+  "ponto": 4,
+  "nome": "Córrego Pirapózinho",
+  "bacia": "Ribeirão Jacutinga – Rio Jacutinga",
+  "bairro": "Atrás do Conjunto Vivi Xavier",
+  "lat": -23.2545,
+  "lon": -51.1685,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana",
+   "Presença de ocupação irregular nas proximidades",
+   "Existência de descarte irregular de resíduos no local",
+   "Existência de erosões",
+   "Existência de obras da COHAB"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Aguardar o término das obras para realização de plantio de vegetação nativa"
+  ],
+  "laudo_fotografico": "Anexo A – P4",
+  "nota": ""
+ },
+ {
+  "ponto": 5,
+  "nome": "Córrego Sem Dúvida",
+  "bacia": "Ribeirão Jacutinga – Rio Jacutinga",
+  "bairro": "Fundos do Conjunto Luís de Sá",
+  "lat": -23.253302,
+  "lon": -51.170623,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbana",
+   "Presença de ocupação irregular",
+   "Nascentes canalizadas",
+   "Presença de espécies exóticas invasoras",
+   "Não foi observada presença de espécies arbóreas nativas na APP",
+   "Existência de erosões",
+   "Galerias danificadas"
+  ],
+  "recomendacoes": [
+   "Ação MP",
+   "Intervenção de obras para reparo das erosões",
+   "Intervenção de obras para reparo de galerias",
+   "Controle das espécies invasoras",
+   "Plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Não há",
+  "nota": ""
+ },
+ {
+  "ponto": 6,
+  "nome": "Córrego Veado",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Jardim da Saudade",
+  "lat": -23.2644,
+  "lon": -51.163,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Caixa de alvenaria a jusante da nascente",
+   "Ausência de dissipador",
+   "Existência de erosões e voçoroca",
+   "Existência de descarte irregular de resíduos",
+   "Vegetação bem preservada",
+   "Presença de espécies exóticas: abacate, amora, bananeira",
+   "Presença de exótica invasora: Leucena"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras de infraestrutura",
+   "Intervenção de obras para reparo das erosões",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle de espécies exóticas invasoras"
+  ],
+  "laudo_fotografico": "Anexo B – P6",
+  "nota": ""
+ },
+ {
+  "ponto": 7,
+  "nome": "Córrego Cabrinha",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Horta do Violim",
+  "lat": -23.2635,
+  "lon": -51.1513,
+  "situacao": "nao_apta",
+  "diagnostico": [
+   "Área urbanizada",
+   "Córrego canalizado",
+   "Não apresenta erosão",
+   "Presença de espécies invasoras na vegetação, principalmente de Leucenas"
+  ],
+  "recomendacoes": [
+   "Não há necessidade de obras, limpeza ou plantio"
+  ],
+  "laudo_fotografico": "Anexo B – P7",
+  "nota": ""
+ },
+ {
+  "ponto": 8,
+  "nome": "Nascente do Ribeirão Lindóia",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Pool de Combustíveis",
+  "lat": -23.275,
+  "lon": -51.225,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana, em processo de expansão",
+   "Caixa de alvenaria para bombeamento",
+   "Não apresenta erosão",
+   "Sem descarte irregular de resíduos",
+   "Vegetação bem preservada, boa diversidade",
+   "Ausência de espécies exóticas invasoras"
+  ],
+  "recomendacoes": [
+   "Não há necessidade de obras, limpeza ou plantio"
+  ],
+  "laudo_fotografico": "Anexo B – P8",
+  "nota": ""
+ },
+ {
+  "ponto": 9,
+  "nome": "Córrego do Topo",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Atrás do Jardim Santo André",
+  "lat": -23.269,
+  "lon": -51.2008,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana",
+   "Local cercado",
+   "Presença de ocupação irregular nas proximidades",
+   "Presença de descarte irregular de resíduos no local",
+   "Ausência de exóticas invasoras"
+  ],
+  "recomendacoes": [
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Plantio de vegetação nativa"
+  ],
+  "laudo_fotografico": "Anexo B – P9",
+  "nota": ""
+ },
+ {
+  "ponto": 10,
+  "nome": "Córrego Sem Nome",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Jardim Maria Lúcia",
+  "lat": -23.2772,
+  "lon": -51.2151,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana, em processo de expansão",
+   "Caixa de alvenaria a jusante da mina",
+   "Água com coloração escura e cheiro",
+   "Não apresenta erosão",
+   "Pouca diversidade de vegetação, presença predominante de Aroeira Pimenteira",
+   "Presença de animais de médio e grande porte, no caso, havia porcos"
+  ],
+  "recomendacoes": [
+   "Fiscalização SEMA",
+   "Monitoramento da qualidade da água pelo órgão responsável",
+   "Plantio de espécies nativas para enriquecimento de flora"
+  ],
+  "laudo_fotografico": "Anexo B – P10",
+  "nota": ""
+ },
+ {
+  "ponto": 11,
+  "nome": "Córrego Ouro Verde",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Jardim Santo André",
+  "lat": -23.2787,
+  "lon": -51.1795,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana",
+   "Existência de dois dissipadores",
+   "Erosão ao lado do dissipador",
+   "Voçorocas após o dissipador",
+   "Há descarte irregular de resíduos",
+   "Pouca diversidade de vegetação",
+   "Presença de espécies exóticas: café e bananeira",
+   "Presença de espécie exótica invasora: Leucenas e Santa Bárbara",
+   "Espécies nativas: Cedro, Jerivá"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle de espécies exóticas e invasoras",
+   "Realizar plantio de espécies nativas pioneiras e secundárias entre os pés de café e bananeiras"
+  ],
+  "laudo_fotografico": "Anexo B – P11",
+  "nota": ""
+ },
+ {
+  "ponto": 12,
+  "nome": "Córrego João Paz",
+  "bacia": "Ribeirão Lindóia – Ribeirão Lindóia",
+  "bairro": "Conjunto João Paz",
+  "lat": -23.267,
+  "lon": -51.1405,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana",
+   "Existência de erosão",
+   "Há descarte irregular de resíduos",
+   "Pouca diversidade de vegetação",
+   "Presença de espécie exótica invasora: Leucenas e Amarelinha"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Obras de infraestrutura – construção de um dissipador de energia",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle de espécies exóticas e invasoras",
+   "Realizar plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo B – P12",
+  "nota": ""
+ },
+ {
+  "ponto": 13,
+  "nome": "Córrego Ibiá",
+  "bacia": "Ribeirão Lindóia – Ribeirão Quati",
+  "bairro": "",
+  "lat": null,
+  "lon": null,
+  "situacao": "sem_coordenada",
+  "diagnostico": [],
+  "recomendacoes": [],
+  "laudo_fotografico": "",
+  "nota": "Ficha não disponível nas páginas recebidas; sem coordenada."
+ },
+ {
+  "ponto": 14,
+  "nome": "Córrego Bom Retiro",
+  "bacia": "Ribeirão Lindóia – Ribeirão Quati",
+  "bairro": "Vila Portuguesa",
+  "lat": -23.2932,
+  "lon": -51.1936,
+  "situacao": "nao_apta",
+  "diagnostico": [
+   "Área urbanizada",
+   "Córrego canalizado. Canalização danificada",
+   "Não apresenta erosão",
+   "Presença de alguns resíduos no local",
+   "Presença de espécies invasoras na vegetação, principalmente de Leucenas"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo no canal",
+   "Manejo de brotação de leucenas ao longo do canal",
+   "Limpeza do local – retirada e destinação dos resíduos"
+  ],
+  "laudo_fotografico": "Anexo C – P14",
+  "nota": ""
+ },
+ {
+  "ponto": 15,
+  "nome": "Nascente do Ribeirão Quati",
+  "bacia": "Ribeirão Lindóia – Ribeirão Quati",
+  "bairro": "Leonor",
+  "lat": -23.3014,
+  "lon": -51.1582,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada, presença de ocupação irregular no local",
+   "Córrego canalizado. Canalização danificada",
+   "A área possui erosões",
+   "Há descarte irregular de resíduos no local",
+   "Há descarte irregular de esgoto",
+   "Presença de espécies invasoras na vegetação, como Leucenas, Santa Bárbara e Amarelinha"
+  ],
+  "recomendacoes": [
+   "Ação MP",
+   "Intervenção de obras para reparo das erosões",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Retirada das espécies invasoras",
+   "Plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo C – P15",
+  "nota": ""
+ },
+ {
+  "ponto": 16,
+  "nome": "Nascentes Águas das Pedras",
+  "bacia": "Ribeirão Lindóia – Córrego Água das Pedras",
+  "bairro": "Fundos do 5º Distrito",
+  "lat": -23.3082,
+  "lon": -51.1448,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada, presença de ocupação irregular no local",
+   "Há descarte irregular de resíduos no local",
+   "Existência de erosões",
+   "Presença de animais de médio e grande porte em área urbana (cavalos)",
+   "Presença de espécies exóticas: Amarelinha"
+  ],
+  "recomendacoes": [
+   "Ação MP",
+   "Fiscalização SEMA",
+   "Intervenção de obras para reparo das erosões",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle das espécies exóticas",
+   "Plantio esparso de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo D – P16",
+  "nota": ""
+ },
+ {
+  "ponto": 17,
+  "nome": "Córrego do Fumo",
+  "bacia": "Ribeirão Lindóia – Córrego Água das Pedras",
+  "bairro": "Rosa Branca",
+  "lat": -23.3127,
+  "lon": -51.1386,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Mesma localização do Córrego Londrina. O diagnóstico e as recomendações estão na ficha do ponto 21"
+  ],
+  "recomendacoes": [],
+  "laudo_fotografico": "Não há",
+  "nota": "Mesma coordenada do ponto 21, conforme o laudo."
+ },
+ {
+  "ponto": 18,
+  "nome": "Córrego do Aí",
+  "bacia": "Ribeirão Lindóia – Córrego Água das Pedras",
+  "bairro": "Jardim Castelo",
+  "lat": -23.301273,
+  "lon": -51.139916,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Não foi possível o acesso ao local – área de particular (associação de moradores)"
+  ],
+  "recomendacoes": [
+   "Plantio de nativas. Já existe um Plano de Recuperação de Área Degradada (PRAD) para o local (Processo SEI 19.023.089349/2021-85)"
+  ],
+  "laudo_fotografico": "Não há",
+  "nota": ""
+ },
+ {
+  "ponto": 19,
+  "nome": "Córrego dos Crentes",
+  "bacia": "Ribeirão Lindóia – Córrego Água das Pedras",
+  "bairro": "Próximo ao Marabá",
+  "lat": -23.307506,
+  "lon": -51.127466,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Não foi possível o acesso ao local, pois se trata de uma área de conflito"
+  ],
+  "recomendacoes": [
+   "Ação MP"
+  ],
+  "laudo_fotografico": "Não há",
+  "nota": ""
+ },
+ {
+  "ponto": 20,
+  "nome": "Córrego Palmital",
+  "bacia": "Ribeirão Lindóia – Córrego Água das Pedras",
+  "bairro": "Saída para Ibiporã – Grêmio Literário",
+  "lat": -23.2948,
+  "lon": -51.1308,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Terreno particular",
+   "Nascente em área de lago",
+   "Nascente fora do lago: córrego secundário",
+   "Pendência fiscalização"
+  ],
+  "recomendacoes": [
+   "Plantio?"
+  ],
+  "laudo_fotografico": "Anexo D – P20",
+  "nota": ""
+ },
+ {
+  "ponto": 21,
+  "nome": "Córrego Londrina",
+  "bacia": "Ribeirão Lindóia – Córrego Água das Pedras",
+  "bairro": "Assentamento São Rafael",
+  "lat": -23.3127,
+  "lon": -51.1386,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Habitações em áreas de APP",
+   "Presença de espécies invasoras na vegetação, como Leucenas, Santa Bárbara e Amarelinha"
+  ],
+  "recomendacoes": [
+   "Controle das espécies exóticas",
+   "Previsto limpeza da região (retirada e destinação de resíduos) e plantio de nativas em setembro/2023"
+  ],
+  "laudo_fotografico": "Anexo D – P21",
+  "nota": "Mesma coordenada do ponto 17, conforme o laudo."
+ },
+ {
+  "ponto": 22,
+  "nome": "Nascente do Limoeiro",
+  "bacia": "Ribeirão do Limoeiro – Ribeirão do Limoeiro",
+  "bairro": "Atrás do aeroporto",
+  "lat": -23.3281,
+  "lon": -51.1334,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Estrutura do dissipador de energia danificada",
+   "A área possui erosões",
+   "Há descarte irregular de resíduos no local",
+   "Há descarte irregular de esgoto",
+   "Presença de espécies invasoras na vegetação, como Leucenas, Santa-Bárbara e Uva-japonesa",
+   "Presença de espécies exóticas: jaca e abacateiro"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Intervenção de obras para reparo no dissipador de energia",
+   "Intervenção de obras para reparo de galerias",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Corte seletivo das espécies invasoras. Não é recomendada a retirada de todas as leucenas, pois algumas estão nas encostas e o seu corte pode favorecer os processos erosivos",
+   "Plantio de vegetação nativa"
+  ],
+  "laudo_fotografico": "Anexo E – P22",
+  "nota": ""
+ },
+ {
+  "ponto": 23,
+  "nome": "Córrego Barreiro",
+  "bacia": "Ribeirão do Limoeiro – Ribeirão do Limoeiro",
+  "bairro": "Ernani Moura Lima",
+  "lat": -23.321153,
+  "lon": -51.127325,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Não foi possível acessar, terrenos particulares em áreas de APP"
+  ],
+  "recomendacoes": [
+   "Plantio de nativas. Já existe um Plano de Recuperação de Área Degradada (PRAD) para o local (Processo SEI 19.023.060166/2021-88)"
+  ],
+  "laudo_fotografico": "Não há",
+  "nota": ""
+ },
+ {
+  "ponto": 24,
+  "nome": "Córrego Cafezal",
+  "bacia": "Ribeirão do Limoeiro – Ribeirão do Limoeiro",
+  "bairro": "Alexandre Urbanas",
+  "lat": -23.3127,
+  "lon": -51.1088,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Terreno particular",
+   "Antigo aterro de resíduos de construção civil (RCC) – possui alguns RCCs",
+   "Presença de espécies nativas na vegetação ao redor das nascentes: Chau chau, Guatambú, Tapiá",
+   "Mudas de árvores nativas plantadas no entorno da represa"
+  ],
+  "recomendacoes": [
+   "Enriquecimento de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo E – P24",
+  "nota": ""
+ },
+ {
+  "ponto": 25,
+  "nome": "Córrego Colina Verde",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Conjunto Água Fresca",
+  "lat": -23.3256,
+  "lon": -51.1858,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Existência de erosões",
+   "Solo descoberto",
+   "Água de chuva da Rua das Grevíleas está adentrando o fundo de vale e causando erosões",
+   "Necessidade de construção de um novo dissipador de energia"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Intervenção de obras de infraestrutura",
+   "Adequação de obras relacionada à água pluvial",
+   "Plantio de grama para evitar erosões"
+  ],
+  "laudo_fotografico": "Anexo F – P25",
+  "nota": ""
+ },
+ {
+  "ponto": 26,
+  "nome": "Córrego Capivara",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Próximo ao Shopping Catuaí",
+  "lat": -23.3386,
+  "lon": -51.1829,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Terreno particular",
+   "Vegetação com espécies nativas: Embaúba, Crindiúva e Tapiá",
+   "Presença de espécies exóticas invasoras: Amarelinha, Mamona, Eucalipto e Bambu",
+   "Solo carreado de obras a montante da nascente"
+  ],
+  "recomendacoes": [
+   "Terrenos particulares do entorno devem melhorar suas curvas de nível para evitar o carreamento de solo",
+   "Controle de espécies exóticas invasoras"
+  ],
+  "laudo_fotografico": "Anexo F – P26",
+  "nota": ""
+ },
+ {
+  "ponto": 27,
+  "nome": "Córrego Roseira",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Lagoa Dourada",
+  "lat": -23.3558,
+  "lon": -51.1445,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Presença de espécies exóticas arbóreas, arbustivas e herbáceas",
+   "Há descarte irregular de resíduos no local",
+   "Necessidade de dissipador de energia"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras de infraestrutura",
+   "Controle de espécies exóticas invasoras",
+   "Limpeza do local – retirada e destinação dos resíduos"
+  ],
+  "laudo_fotografico": "Anexo F – P27",
+  "nota": "O laudo fotográfico rotula a foto deste ponto como \"Córrego Colina Verde\"."
+ },
+ {
+  "ponto": 28,
+  "nome": "Córrego Cacique",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Próximo à Cacique",
+  "lat": -23.293,
+  "lon": -51.2159,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Área cercada",
+   "Vegetação com diversas espécies nativas: Canelinha, Mirtáceas, Aroeira-Pimenteira, Chá-de-bugre, Fumo-bravo e Leiteiro",
+   "Presença de espécies exóticas invasoras: Amarelinha e Leucena",
+   "Provável descarte irregular de efluente industrial no local"
+  ],
+  "recomendacoes": [
+   "Monitoramento da qualidade da água pelo órgão responsável",
+   "Fiscalização de empresas a montante da nascente, referente ao licenciamento",
+   "Controle de espécies exóticas invasoras"
+  ],
+  "laudo_fotografico": "Anexo F – P28",
+  "nota": ""
+ },
+ {
+  "ponto": 29,
+  "nome": "Córrego Baroré",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Jardim Tókio",
+  "lat": -23.3029,
+  "lon": -51.194,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Pouca diversidade de vegetação, presença predominante de Aroeira Pimenteira",
+   "Há descarte irregular de resíduos no local",
+   "Horta comunitária"
+  ],
+  "recomendacoes": [
+   "Controle de espécies exóticas invasoras",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Plantio de espécies nativas para enriquecimento de flora"
+  ],
+  "laudo_fotografico": "Anexo F – P29",
+  "nota": ""
+ },
+ {
+  "ponto": 30,
+  "nome": "Córrego Guarujá",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Vila Brasil",
+  "lat": -23.3286,
+  "lon": -51.1502,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada",
+   "Entorno é composto de áreas públicas e áreas privadas",
+   "Habitações particulares em áreas de APP",
+   "Nascente desprovida de vegetação arbórea nativa na APP",
+   "Há descarte de resíduos no local",
+   "Há descarte irregular de esgoto na galeria pluvial",
+   "Presença de espécies exóticas na vegetação, como Leucenas, Alfeneiro e Uva-japonesa"
+  ],
+  "recomendacoes": [
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle de espécies exóticas invasoras",
+   "Plantio de espécies nativas diversas"
+  ],
+  "laudo_fotografico": "Anexo F – P30",
+  "nota": ""
+ },
+ {
+  "ponto": 31,
+  "nome": "Córrego Rubi",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Jardim Dom Bosco",
+  "lat": -23.3063,
+  "lon": -51.1835,
+  "situacao": "nao_apta",
+  "diagnostico": [
+   "Área urbanizada",
+   "Nascente canalizada",
+   "Dissipador de energia danificado",
+   "Boa diversidade de vegetação",
+   "Existência de erosão crítica no local"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Intervenção de obras para reparo no dissipador de energia"
+  ],
+  "laudo_fotografico": "Anexo F – P31",
+  "nota": ""
+ },
+ {
+  "ponto": 32,
+  "nome": "Córrego Cristal",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Jardim Cristal",
+  "lat": -23.3788,
+  "lon": -51.129,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada, presença de ocupação irregular no local",
+   "Banhado",
+   "Espécies vegetais encontradas: Leucena, Ficus, Embaúba, Bambu e Taboa",
+   "Há descarte irregular de resíduos no local"
+  ],
+  "recomendacoes": [
+   "Ação MP",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle de espécies exóticas invasoras",
+   "Plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo F – P32",
+  "nota": ""
+ },
+ {
+  "ponto": 33,
+  "nome": "Córrego São Lourenço",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Conjunto São Lourenço",
+  "lat": -23.3733,
+  "lon": -51.1112,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbanizada, em processo de expansão",
+   "Loteamento irregular no local",
+   "Existência de erosões",
+   "Presença de espécies exóticas na vegetação, como Leucenas, Bambu e Pinus",
+   "Presença de espécies nativas: Embaúba e Araucária (muda)"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Controle de espécies exóticas invasoras",
+   "Plantio de espécies nativas?"
+  ],
+  "laudo_fotografico": "Anexo F – P33",
+  "nota": ""
+ },
+ {
+  "ponto": 34,
+  "nome": "Córrego Água Fresca",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Vale Verde",
+  "lat": -23.3108,
+  "lon": -51.173,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Nascente canalizada",
+   "Galerias danificadas",
+   "Existência de erosão no local",
+   "Presença de espécies exóticas na vegetação, como Leucenas, Santa Bárbara e Jambolão"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo das erosões",
+   "Intervenção de obras para reparo nas galerias",
+   "Controle de espécies exóticas invasoras",
+   "Plantio de espécies nativas para enriquecimento de flora"
+  ],
+  "laudo_fotografico": "Anexo F – P34",
+  "nota": ""
+ },
+ {
+  "ponto": 35,
+  "nome": "Córrego do Leme",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Zerão",
+  "lat": -23.3234,
+  "lon": -51.1637,
+  "situacao": "nao_apta",
+  "diagnostico": [
+   "Área urbanizada",
+   "Área revitalizada",
+   "Diversas nascentes canalizadas",
+   "Córrego canalizado, estrutura do canal danificada",
+   "Espécies arbóreas presentes: falso-barbatimão, ameixeira, ipê-roxo, goiaba, mogno africano (3)"
+  ],
+  "recomendacoes": [
+   "Intervenção de obras para reparo na canalização"
+  ],
+  "laudo_fotografico": "Anexo F – P35",
+  "nota": ""
+ },
+ {
+  "ponto": 36,
+  "nome": "Córrego do Carambeí",
+  "bacia": "Ribeirão Cambé – Ribeirão do Cambé",
+  "bairro": "Nova Conquista",
+  "lat": -23.309623,
+  "lon": -51.108547,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Separação de materiais recicláveis a céu aberto",
+   "Há descarte irregular de resíduos no local",
+   "Presença de árvores nativas isoladas",
+   "Presença de animais de médio e grande porte (cavalos), em área urbana",
+   "Presença de espécies exóticas na vegetação, como Leucenas e Amarelinha"
+  ],
+  "recomendacoes": [
+   "Fiscalização SEMA",
+   "Limpeza do local – retirada e destinação dos resíduos",
+   "Controle de espécies exóticas invasoras",
+   "Plantio de espécies nativas para enriquecimento de flora"
+  ],
+  "laudo_fotografico": "Não há",
+  "nota": ""
+ },
+ {
+  "ponto": 37,
+  "nome": "Córrego Saltinho",
+  "bacia": "Ribeirão Cafezal – Ribeirão Esperança",
+  "bairro": "Cafezal",
+  "lat": -23.3715,
+  "lon": -51.1396,
+  "situacao": "nao_apta",
+  "diagnostico": [
+   "Área urbanizada",
+   "Nascente canalizada",
+   "Descarte irregular de esgoto",
+   "Área cercada com arame. Presença de fezes de cavalo, mas não havia animais no momento da vistoria",
+   "Margem direita do córrego fechada (construções)"
+  ],
+  "recomendacoes": [
+   "Fiscalização SEMA",
+   "Obras de infraestrutura para criação de dissipador",
+   "Plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo G – P37",
+  "nota": ""
+ },
+ {
+  "ponto": 38,
+  "nome": "Córrego Jerimú",
+  "bacia": "Ribeirão Cafezal – Ribeirão Esperança",
+  "bairro": "União da Vitória",
+  "lat": -23.3856,
+  "lon": -51.1301,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana, em processo de expansão",
+   "Terreno particular",
+   "Presença de exótica invasora: Leucena",
+   "Vegetação nativa: cebolão, primavera e trema"
+  ],
+  "recomendacoes": [
+   "Controle de espécies exóticas invasoras",
+   "Plantio de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo G – P38",
+  "nota": ""
+ },
+ {
+  "ponto": 39,
+  "nome": "Córrego Cebolão",
+  "bacia": "Ribeirão Cafezal – Ribeirão Esperança",
+  "bairro": "Entre Jardim Columbia e Versalhes II",
+  "lat": -23.329,
+  "lon": -51.203,
+  "situacao": "a_confirmar",
+  "diagnostico": [
+   "Área urbana",
+   "Dentro da Universidade Estadual de Londrina (UEL)",
+   "Presença de espécies exóticas invasoras",
+   "Baixa diversidade de espécies nativas"
+  ],
+  "recomendacoes": [
+   "Controle de espécies exóticas invasoras",
+   "Enriquecimento de espécies nativas"
+  ],
+  "laudo_fotografico": "Não há",
+  "nota": "Localização aproximada: a coordenada impressa no laudo (-23.309623, -51.108547) repete a do ponto 36."
+ },
+ {
+  "ponto": 40,
+  "nome": "Córrego Gabiroba",
+  "bacia": "Ribeirão Cafezal – Ribeirão Esperança",
+  "bairro": "Portal de Versalhes",
+  "lat": -23.3334,
+  "lon": -51.1957,
+  "situacao": "executada",
+  "diagnostico": [
+   "Área urbana, em processo de expansão",
+   "Terreno particular",
+   "Presença de espécies nativas na vegetação: Trema, Aroeira Pimenteira, Canelinha, Embaúba e Tapiá",
+   "Presença de espécies exóticas: Leucena e Amarelinha"
+  ],
+  "recomendacoes": [
+   "Enriquecimento de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo G – P40",
+  "nota": ""
+ },
+ {
+  "ponto": 41,
+  "nome": "Córrego Água do Tatu",
+  "bacia": "Ribeirão Cafezal – Ribeirão Esperança",
+  "bairro": "Jardim Alphaville",
+  "lat": -23.353,
+  "lon": -51.1846,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Presença de espécies nativas na vegetação: Fumo-bravo, Angico",
+   "Presença de espécies exóticas: Amarelinha, Mamona e gramíneas (capim)",
+   "Projeto existente na SMOP para construção de galeria e recuperação da área"
+  ],
+  "recomendacoes": [
+   "Controle de espécies exóticas invasoras",
+   "Enriquecimento de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo G – P41",
+  "nota": ""
+ },
+ {
+  "ponto": 42,
+  "nome": "Córrego Água Clara",
+  "bacia": "Ribeirão Cafezal – Ribeirão Esperança",
+  "bairro": "Fundos do Cafezal",
+  "lat": -23.3739,
+  "lon": -51.1628,
+  "situacao": "em_analise",
+  "diagnostico": [
+   "Área urbanizada",
+   "Presença de ocupação irregular",
+   "Margem direita da nascente não possui árvores",
+   "Ausência de dissipador de energia"
+  ],
+  "recomendacoes": [
+   "Ação MP",
+   "Intervenção de obras de infraestrutura",
+   "Enriquecimento de espécies nativas"
+  ],
+  "laudo_fotografico": "Anexo G – P42",
+  "nota": ""
+ }
+]
