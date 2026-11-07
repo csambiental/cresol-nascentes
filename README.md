@@ -10,14 +10,18 @@ Mapa demonstrativo de controle e transparência de nascentes protegidas em Londr
 | Em análise | 15 | Laudo do Projeto Broto d'Água (pontos 1, 2, 4, 6, 9, 10, 12, 22, 24, 25, 26, 28, 36, 40, 41) |
 | Não aptas | 5 | Laudo do Projeto Broto d'Água – nascentes canalizadas (pontos 7, 14, 31, 35, 37) |
 
-Pontos do laudo que coincidem com nascentes já executadas pela SEMA não foram repetidos.
+| Vistoriadas (laudo) | 22 | Demais pontos do laudo do Projeto Broto d'Água |
+
+Os 42 pontos do laudo estão na base. O ponto 13 (Córrego Ibiá) não tem coordenada no laudo e não aparece no mapa. O ponto 39 (Córrego Cebolão, UEL) usa localização aproximada, porque a coordenada do laudo repete a do ponto 36.
+
+Situações aceitas: `executada`, `em_analise`, `nao_apta`, `vistoriada`.
 
 ## Arquivos
 
 - `index.html` – mapa (satélite ou mapa de ruas), filtros por situação e lista de nascentes
 - `data/nascentes.csv` – um ponto por linha: `id, situacao, endereco, bairro_distrito, lat, lon, fonte`
 
-Situações aceitas: `executada`, `em_analise`, `nao_apta`.
+
 
 ## Ver o mapa
 

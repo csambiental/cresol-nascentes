@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Public+Sans:wght@400;600;700&display=swap">
 <style>
 :root{--bg:#0E2A21;--panel:#13352A;--fg:#F2F5EF;--muted:#A9C4B8;--line:#24493C;--accent:#5FD3C6;
-  --executada:#3FB950;--em_analise:#F2C14E;--nao_apta:#E5534B}
+  --executada:#3FB950;--em_analise:#F2C14E;--nao_apta:#E5534B;--vistoriada:#8FB3C9}
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font:15px/1.5 "Public Sans",system-ui,sans-serif;display:grid;grid-template-columns:340px 1fr;grid-template-rows:100%}
@@ -40,7 +40,7 @@ h1{font:900 26px/1.1 Archivo,"Arial Narrow",sans-serif;margin:0}
     <div class="eyebrow">Londrina e região · Paraná</div>
     <h1>Nascentes de Londrina</h1>
   </div>
-  <div class="sim"><b>Simulação.</b> Mapa demonstrativo de controle e transparência. As localizações são reais; as situações "em análise" e "não apta" são ilustrativas.</div>
+  <div class="sim"><b>Simulação.</b> Mapa demonstrativo de controle e transparência. As localizações são reais; as situações são ilustrativas.</div>
   <div class="box">
     <h2>Situação</h2>
     <div class="bar" id="bar"></div>
@@ -56,7 +56,7 @@ h1{font:900 26px/1.1 Archivo,"Arial Narrow",sans-serif;margin:0}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const SIT={executada:"Executadas",em_analise:"Em análise",nao_apta:"Não aptas"};
+const SIT={executada:"Executadas",em_analise:"Em análise",nao_apta:"Não aptas",vistoriada:"Vistoriadas (laudo)"};
 const col=k=>getComputedStyle(document.documentElement).getPropertyValue('--'+k).trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function parseCSV(t){const L=t.trim().split(/\r?\n/).map(l=>{const o=[];let f='',q=false;for(const c of l){if(q){if(c=='"')q=false;else f+=c}else if(c=='"')q=true;else if(c==','){o.push(f);f=''}else f+=c}o.push(f);return o});const h=L.shift();return L.map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
@@ -68,7 +68,7 @@ sat.addTo(map);L.control.layers({'Satélite':sat,'Mapa':osm},null).addTo(map);
 const groups={};Object.keys(SIT).forEach(k=>groups[k]=L.layerGroup().addTo(map));
 
 fetch('data/nascentes.csv').then(r=>r.text()).then(t=>{
-  const pts=parseCSV(t);const items=[];
+  const pts=parseCSV(t).filter(p=>p.lat&&p.lon);const items=[];
   pts.forEach(p=>{
     const c=col(p.situacao);
     const m=L.circleMarker([+p.lat,+p.lon],{radius:8,color:'#0b1d16',weight:2,fillColor:c,fillOpacity:.95});
