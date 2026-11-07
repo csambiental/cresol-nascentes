@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nascentes de Londrina – simulação</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#0E2A21;--panel:#13352A;--fg:#F2F5EF;--muted:#A9C4B8;--line:#24493C;--accent:#5FD3C6;
+  --executada:#3FB950;--em_analise:#F2C14E;--nao_apta:#E5534B}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 "Public Sans",system-ui,sans-serif;display:grid;grid-template-columns:340px 1fr;grid-template-rows:100%}
+@media (max-width:800px){body{grid-template-columns:1fr;grid-template-rows:auto 65vh}aside{order:2}}
+aside{background:var(--panel);overflow:auto;padding:22px 20px;display:flex;flex-direction:column;gap:18px;border-right:1px solid var(--line)}
+#map{height:100%;min-height:360px}
+h1{font:900 26px/1.1 Archivo,"Arial Narrow",sans-serif;margin:0}
+.eyebrow{font:700 11px "Public Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.sim{border:1px dashed var(--accent);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--muted)}
+.box{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px}
+.box h2{font:800 15px Archivo,sans-serif;margin:0}
+.legend label{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:15px}
+.legend input{accent-color:var(--accent)}
+.dot{width:14px;height:14px;border-radius:50%;flex:none;border:2px solid #0b1d16}
+.n{margin-left:auto;font:700 18px Archivo,sans-serif;font-variant-numeric:tabular-nums}
+.bar{display:flex;height:12px;border-radius:6px;overflow:hidden}
+.list{display:grid;gap:4px;max-height:300px;overflow:auto}
+.item{display:flex;gap:10px;align-items:center;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:13px;border:0;background:none;color:inherit;text-align:left;width:100%}
+.item:hover,.item:focus-visible{background:var(--line);outline:none}
+.muted{color:var(--muted);font-size:12px}
+.leaflet-popup-content{font:13px/1.45 "Public Sans",sans-serif}
+.leaflet-popup-content h3{margin:0 0 4px;font:800 15px Archivo,sans-serif}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;color:#0b1d16;margin-bottom:6px}
+</style>
+</head>
+<body>
+<aside>
+  <div>
+    <div class="eyebrow">Londrina e região · Paraná</div>
+    <h1>Nascentes de Londrina</h1>
+  </div>
+  <div class="sim"><b>Simulação.</b> Mapa demonstrativo de controle e transparência. As situações são ilustrativas e as localizações rurais são simuladas.</div>
+  <div class="box">
+    <h2>Situação</h2>
+    <div class="bar" id="bar"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+  <div class="box">
+    <h2>Nascentes</h2>
+    <div class="list" id="list"></div>
+  </div>
+  <div class="muted">Pontos urbanos: localizações públicas divulgadas pela Secretaria Municipal do Ambiente de Londrina (2025). Sem dados pessoais.</div>
+</aside>
+<div id="map" role="region" aria-label="Mapa das nascentes"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const SIT={executada:"Executadas",em_analise:"Em análise",nao_apta:"Não aptas"};
+const col=k=>getComputedStyle(document.documentElement).getPropertyValue('--'+k).trim();
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function parseCSV(t){const L=t.trim().split(/\r?\n/).map(l=>{const o=[];let f='',q=false;for(const c of l){if(q){if(c=='"')q=false;else f+=c}else if(c=='"')q=true;else if(c==','){o.push(f);f=''}else f+=c}o.push(f);return o});const h=L.shift();return L.map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
+
+const map=L.map('map').setView([-23.42,-51.15],10);
+const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagem © Esri, Maxar, Earthstar Geographics'});
+const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'});
+sat.addTo(map);L.control.layers({'Satélite':sat,'Mapa':osm},null).addTo(map);
+const groups={};Object.keys(SIT).forEach(k=>groups[k]=L.layerGroup().addTo(map));
+
+fetch('data/nascentes.csv').then(r=>r.text()).then(t=>{
+  const pts=parseCSV(t);const items=[];
+  pts.forEach(p=>{
+    const c=col(p.situacao);
+    const m=L.circleMarker([+p.lat,+p.lon],{radius:8,color:'#0b1d16',weight:2,fillColor:c,fillOpacity:.95});
+    m.bindPopup(`<span class="pill" style="background:${c}">${esc(SIT[p.situacao])}</span><h3>${esc(p.id)}</h3><div>${esc(p.endereco)}</div><div style="color:#555">${esc(p.bairro_distrito)}</div><div style="margin-top:4px;color:#555;font-size:12px">${esc(p.fonte)}</div><div style="margin-top:6px"><a href="https://www.google.com/maps?q=${p.lat},${p.lon}" target="_blank" rel="noopener">Abrir no Google Maps</a></div>`);
+    m.addTo(groups[p.situacao]);items.push({p,m});
+  });
+  map.fitBounds(L.featureGroup(items.map(x=>x.m)).getBounds().pad(.08));
+  const cnt=k=>pts.filter(p=>p.situacao===k).length;
+  document.getElementById('bar').innerHTML=Object.keys(SIT).map(k=>`<span style="flex:${cnt(k)};background:${col(k)}"></span>`).join('');
+  const lg=document.getElementById('legend');
+  Object.entries(SIT).forEach(([k,l])=>{const lab=document.createElement('label');
+    lab.innerHTML=`<input type="checkbox" id="f-${k}" checked><span class="dot" style="background:${col(k)}"></span>${l}<span class="n">${cnt(k)}</span>`;
+    lab.querySelector('input').onchange=e=>{e.target.checked?groups[k].addTo(map):map.removeLayer(groups[k]);list()};lg.appendChild(lab)});
+  function list(){const el=document.getElementById('list');el.innerHTML='';
+    items.filter(x=>map.hasLayer(groups[x.p.situacao])).forEach(({p,m})=>{const b=document.createElement('button');b.className='item';b.type='button';
+      b.innerHTML=`<span class="dot" style="background:${col(p.situacao)}"></span><span><b>${esc(p.id)}</b> ${esc(p.endereco)}</span>`;
+      b.onclick=()=>{map.setView(m.getLatLng(),15);m.openPopup()};el.appendChild(b)})}
+  list();
+});
+</script>
+</body>
+</html>
