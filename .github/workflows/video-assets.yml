@@ -1,0 +1,24 @@
+name: Baixar imagens para o vídeo
+on:
+  workflow_dispatch:
+  push:
+    branches: [video-assets]
+    paths: ['tools/baixar_imagens.py', '.github/workflows/video-assets.yml']
+permissions:
+  contents: write
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install pillow
+      - run: python tools/baixar_imagens.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add video-assets
+          git commit -m "Imagens de satélite e rios para o vídeo" || echo "sem mudanças"
+          git push
