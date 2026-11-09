@@ -2,6 +2,8 @@
 
 Mapa demonstrativo de controle e transparência das nascentes vistoriadas em Londrina.
 
+Realização: Cresol · Execução: CS Consultoria Ambiental · Apoio: Instituto Biosimos
+
 **Este repositório é uma simulação.** Os 42 pontos, as coordenadas e as fichas (bacia, bairro, diagnóstico, recomendações e laudo fotográfico) foram transcritos do laudo de vistoria do Projeto Broto d'Água. As situações são ilustrativas.
 
 | Situação | Pontos |
