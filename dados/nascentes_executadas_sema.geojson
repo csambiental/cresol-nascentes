@@ -1,0 +1,331 @@
+{
+ "type": "FeatureCollection",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 1,
+    "local": "Córrego Roseira",
+    "ponto_laudo": 27,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.144388,
+     -23.356451
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 2,
+    "local": "Córrego Roseira",
+    "ponto_laudo": 27,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.144506,
+     -23.35655
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 3,
+    "local": "Córrego Roseira",
+    "ponto_laudo": 27,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.144251,
+     -23.356631
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 4,
+    "local": "Córrego Ouro Verde",
+    "ponto_laudo": 11,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.179495,
+     -23.278703
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 5,
+    "local": "Córrego Baroré",
+    "ponto_laudo": 29,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.194002,
+     -23.302804
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 6,
+    "local": "Córrego Guarujá",
+    "ponto_laudo": 30,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.151009,
+     -23.328207
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 7,
+    "local": "Córrego Jerimú",
+    "ponto_laudo": 38,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.130093,
+     -23.385613
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 8,
+    "local": "Córrego Jerimú",
+    "ponto_laudo": 38,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.130084,
+     -23.38592
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 9,
+    "local": "Córrego Jerimú",
+    "ponto_laudo": 38,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.130103,
+     -23.385902
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 10,
+    "local": "Horta Comunitária Nova Esperança",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.114214,
+     -23.389319
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 11,
+    "local": "Aterro Lago Igapó",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1798,
+     -23.3226
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 12,
+    "local": "Aterro Lago Igapó",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.179841,
+     -23.322575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 13,
+    "local": "Aterro Lago Igapó",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.180568,
+     -23.322085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 14,
+    "local": "Paulo Damario",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1173,
+     -23.6883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 15,
+    "local": "Cláudio da Silva",
+    "ponto_laudo": "",
+    "nota": "Coordenada impressa sem o ponto decimal na lista da SEMA; corrigida."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1113,
+     -23.6954
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 16,
+    "local": "Airton",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1096,
+     -23.6952
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 17,
+    "local": "Conjunto Cafezal",
+    "ponto_laudo": "",
+    "nota": "Longitude impressa sem o ponto decimal na lista da SEMA; corrigida."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1542,
+     -23.3655
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 18,
+    "local": "Conjunto Cafezal",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1546,
+     -23.3656
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 19,
+    "local": "São Marcus",
+    "ponto_laudo": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1297,
+     -23.3666
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": 20,
+    "local": "Ernani Moura Lima",
+    "ponto_laudo": "",
+    "nota": "Longitude impressa com vírgula na lista da SEMA; corrigida."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1092,
+     -23.3295
+    ]
+   }
+  }
+ ]
+}
