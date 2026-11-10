@@ -64,6 +64,7 @@
           <button type="button" data-fundo="mapa">Mapa</button>
         </div>
         <button type="button" class="btn" id="verTodas">Ver todas as nascentes</button>
+        <button type="button" class="btn" id="verMunicipio">Ver o município inteiro</button>
       </div>
     </section>
 
@@ -77,7 +78,7 @@
     <section class="card">
       <h2 class="card-titulo">Sobre a Ação</h2>
       <p class="creditos"><b>Realização:</b> Cresol · <b>Execução:</b> CS Consultoria Ambiental · <b>Apoio:</b> Instituto Biosimos</p>
-      <span class="fonte">Fonte: laudo de vistoria do Projeto Broto d'Água, Londrina. Coordenadas e fichas transcritas do documento original. Sem dados pessoais.</span>
+      <span class="fonte">Fonte: laudo de vistoria do Projeto Broto d'Água, Londrina. Coordenadas e fichas transcritas do documento original. Limite municipal: IBGE. Sem dados pessoais.</span>
     </section>
 
     <p class="footnote">Atualizado em 10/11/2026 · CS Consultoria Ambiental</p>
@@ -110,7 +111,10 @@ document.querySelectorAll('[data-fundo]').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('[data-fundo]').forEach(x=>x.classList.toggle('active',x===b));});
 
 const grupos={},ligado={};Object.keys(SIT).forEach(k=>{grupos[k]=L.layerGroup().addTo(map);ligado[k]=true});
-let pts=[],marks={},atual=null;
+let pts=[],marks={},atual=null,limiteOn=true;
+const limite=L.geoJSON(null,{style:{color:'#ffd54f',weight:3,fill:false,dashArray:null},interactive:false});
+const limiteSombra=L.geoJSON(null,{style:{color:'#000',weight:6,opacity:.35,fill:false},interactive:false});
+fetch('data/limite_londrina.geojson').then(r=>r.json()).then(g=>{limiteSombra.addData(g).addTo(map);limite.addData(g).addTo(map);limiteSombra.bringToBack();if(!pts.length)map.fitBounds(limite.getBounds());});
 const cnt=k=>pts.filter(p=>p.situacao===k).length;
 
 function popup(p){return `<div class="popup"><span class="status-badge" style="background:${col(p.situacao)}">${esc(SIT[p.situacao])}</span>
@@ -132,13 +136,19 @@ function ficha(p){
 }
 
 function camadas(){
-  const el=$('camadas');el.innerHTML='<span class="camada-sub">Nascentes por situação</span>';
+  const el=$('camadas');el.innerHTML='<span class="camada-sub">Território</span>';
+  const lb=document.createElement('button');lb.type='button';lb.className='camada-row'+(limiteOn?' ativo':'');
+  lb.innerHTML='<i class="ic-line" style="border-color:#ffd54f"></i><span class="camada-nome">Limite do município</span><span class="chave"></span>';
+  lb.onclick=()=>{limiteOn=!limiteOn;[limiteSombra,limite].forEach(l=>limiteOn?l.addTo(map):map.removeLayer(l));camadas();legenda()};el.appendChild(lb);
+  el.insertAdjacentHTML('beforeend','<span class="camada-sub">Nascentes por situação</span>');
   Object.keys(SIT).forEach(k=>{if(!cnt(k))return;const b=document.createElement('button');b.type='button';b.className='camada-row'+(ligado[k]?' ativo':'');
     b.innerHTML=`<i class="ic-dot" style="background:${col(k)}"></i><span class="camada-nome">${SITP[k]} <span class="lg-n">${cnt(k)}</span></span><span class="chave"></span>`;
     b.onclick=()=>{ligado[k]=!ligado[k];ligado[k]?grupos[k].addTo(map):map.removeLayer(grupos[k]);camadas();legenda();lista()};el.appendChild(b)});
 }
 function legenda(){
   $('legend').innerHTML=`<details open><summary>Legenda</summary>
+    <div class="lg-group">Limite do município</div>
+    <div class="lg-item${limiteOn?'':' lg-off'}"><i class="lg-area" style="border-color:#ffd54f;background:transparent"></i>Londrina</div>
     <div class="lg-group">Nascentes do laudo (${pts.length})</div>
     ${Object.keys(SIT).filter(cnt).map(k=>`<div class="lg-item${ligado[k]?'':' lg-off'}"><i class="lg-dot" style="background:${col(k)}"></i>${SITP[k]} (${cnt(k)})</div>`).join('')}
     </details>`;
@@ -170,6 +180,7 @@ fetch('data/nascentes.json').then(r=>r.json()).then(d=>{
 });
 $('busca').addEventListener('input',lista);
 $('verTodas').onclick=verTodas;
+$('verMunicipio').onclick=()=>{if(limite.getLayers().length)map.fitBounds(limite.getBounds().pad(.02))};
 document.querySelectorAll('.card-titulo').forEach(h=>h.onclick=()=>h.parentElement.classList.toggle('fechado'));
 $('panelToggle').onclick=()=>{const c=document.body.classList.toggle('panel-closed');$('panelToggle').setAttribute('aria-expanded',!c);setTimeout(()=>map.invalidateSize(),50)};
 </script>
