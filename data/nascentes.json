@@ -6,7 +6,7 @@
   "bairro": "Heimtal",
   "lat": -23.2483,
   "lon": -51.1553,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Nascente canalizada",
@@ -33,7 +33,7 @@
   "bairro": "Jardim Catuaí",
   "lat": -23.2539,
   "lon": -51.1349,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Existência de erosões",
@@ -54,7 +54,7 @@
   "bairro": "Fundos do Conjunto José Giordano",
   "lat": -23.2565,
   "lon": -51.1804,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Nascente canalizada",
@@ -83,7 +83,7 @@
   "bairro": "Atrás do Conjunto Vivi Xavier",
   "lat": -23.2545,
   "lon": -51.1685,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Presença de ocupação irregular nas proximidades",
@@ -106,7 +106,7 @@
   "bairro": "Fundos do Conjunto Luís de Sá",
   "lat": -23.253302,
   "lon": -51.170623,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Presença de ocupação irregular",
@@ -133,7 +133,7 @@
   "bairro": "Jardim da Saudade",
   "lat": -23.2644,
   "lon": -51.163,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Caixa de alvenaria a jusante da nascente",
@@ -160,7 +160,7 @@
   "bairro": "Horta do Violim",
   "lat": -23.2635,
   "lon": -51.1513,
-  "situacao": "nao_apta",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Córrego canalizado",
@@ -180,7 +180,7 @@
   "bairro": "Pool de Combustíveis",
   "lat": -23.275,
   "lon": -51.225,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana, em processo de expansão",
    "Caixa de alvenaria para bombeamento",
@@ -202,7 +202,7 @@
   "bairro": "Atrás do Jardim Santo André",
   "lat": -23.269,
   "lon": -51.2008,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Local cercado",
@@ -224,7 +224,7 @@
   "bairro": "Jardim Maria Lúcia",
   "lat": -23.2772,
   "lon": -51.2151,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana, em processo de expansão",
    "Caixa de alvenaria a jusante da mina",
@@ -267,7 +267,10 @@
    "Realizar plantio de espécies nativas pioneiras e secundárias entre os pés de café e bananeiras"
   ],
   "laudo_fotografico": "Anexo B – P11",
-  "nota": ""
+  "nota": "",
+  "itens_sema": [
+   4
+  ]
  },
  {
   "ponto": 12,
@@ -276,7 +279,7 @@
   "bairro": "Conjunto João Paz",
   "lat": -23.267,
   "lon": -51.1405,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana",
    "Existência de erosão",
@@ -314,7 +317,7 @@
   "bairro": "Vila Portuguesa",
   "lat": -23.2932,
   "lon": -51.1936,
-  "situacao": "nao_apta",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Córrego canalizado. Canalização danificada",
@@ -337,7 +340,7 @@
   "bairro": "Leonor",
   "lat": -23.3014,
   "lon": -51.1582,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada, presença de ocupação irregular no local",
    "Córrego canalizado. Canalização danificada",
@@ -363,7 +366,7 @@
   "bairro": "Fundos do 5º Distrito",
   "lat": -23.3082,
   "lon": -51.1448,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada, presença de ocupação irregular no local",
    "Há descarte irregular de resíduos no local",
@@ -389,7 +392,7 @@
   "bairro": "Rosa Branca",
   "lat": -23.3127,
   "lon": -51.1386,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Mesma localização do Córrego Londrina. O diagnóstico e as recomendações estão na ficha do ponto 21"
   ],
@@ -404,7 +407,7 @@
   "bairro": "Jardim Castelo",
   "lat": -23.301273,
   "lon": -51.139916,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Não foi possível o acesso ao local – área de particular (associação de moradores)"
   ],
@@ -421,7 +424,7 @@
   "bairro": "Próximo ao Marabá",
   "lat": -23.307506,
   "lon": -51.127466,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Não foi possível o acesso ao local, pois se trata de uma área de conflito"
   ],
@@ -438,7 +441,7 @@
   "bairro": "Saída para Ibiporã – Grêmio Literário",
   "lat": -23.2948,
   "lon": -51.1308,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Terreno particular",
@@ -459,7 +462,7 @@
   "bairro": "Assentamento São Rafael",
   "lat": -23.3127,
   "lon": -51.1386,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Habitações em áreas de APP",
@@ -479,7 +482,7 @@
   "bairro": "Atrás do aeroporto",
   "lat": -23.3281,
   "lon": -51.1334,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Estrutura do dissipador de energia danificada",
@@ -507,7 +510,7 @@
   "bairro": "Ernani Moura Lima",
   "lat": -23.321153,
   "lon": -51.127325,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Não foi possível acessar, terrenos particulares em áreas de APP"
@@ -525,7 +528,7 @@
   "bairro": "Alexandre Urbanas",
   "lat": -23.3127,
   "lon": -51.1088,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Terreno particular",
@@ -546,7 +549,7 @@
   "bairro": "Conjunto Água Fresca",
   "lat": -23.3256,
   "lon": -51.1858,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Existência de erosões",
@@ -570,7 +573,7 @@
   "bairro": "Próximo ao Shopping Catuaí",
   "lat": -23.3386,
   "lon": -51.1829,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Terreno particular",
@@ -605,7 +608,12 @@
    "Limpeza do local – retirada e destinação dos resíduos"
   ],
   "laudo_fotografico": "Anexo F – P27",
-  "nota": "O laudo fotográfico rotula a foto deste ponto como \"Córrego Colina Verde\"."
+  "nota": "O laudo fotográfico rotula a foto deste ponto como \"Córrego Colina Verde\".",
+  "itens_sema": [
+   1,
+   2,
+   3
+  ]
  },
  {
   "ponto": 28,
@@ -614,7 +622,7 @@
   "bairro": "Próximo à Cacique",
   "lat": -23.293,
   "lon": -51.2159,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Área cercada",
@@ -650,7 +658,10 @@
    "Plantio de espécies nativas para enriquecimento de flora"
   ],
   "laudo_fotografico": "Anexo F – P29",
-  "nota": ""
+  "nota": "",
+  "itens_sema": [
+   5
+  ]
  },
  {
   "ponto": 30,
@@ -675,7 +686,10 @@
    "Plantio de espécies nativas diversas"
   ],
   "laudo_fotografico": "Anexo F – P30",
-  "nota": ""
+  "nota": "",
+  "itens_sema": [
+   6
+  ]
  },
  {
   "ponto": 31,
@@ -684,7 +698,7 @@
   "bairro": "Jardim Dom Bosco",
   "lat": -23.3063,
   "lon": -51.1835,
-  "situacao": "nao_apta",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Nascente canalizada",
@@ -706,7 +720,7 @@
   "bairro": "Jardim Cristal",
   "lat": -23.3788,
   "lon": -51.129,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada, presença de ocupação irregular no local",
    "Banhado",
@@ -729,7 +743,7 @@
   "bairro": "Conjunto São Lourenço",
   "lat": -23.3733,
   "lon": -51.1112,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada, em processo de expansão",
    "Loteamento irregular no local",
@@ -752,7 +766,7 @@
   "bairro": "Vale Verde",
   "lat": -23.3108,
   "lon": -51.173,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Nascente canalizada",
@@ -776,7 +790,7 @@
   "bairro": "Zerão",
   "lat": -23.3234,
   "lon": -51.1637,
-  "situacao": "nao_apta",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Área revitalizada",
@@ -797,7 +811,7 @@
   "bairro": "Nova Conquista",
   "lat": -23.309623,
   "lon": -51.108547,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Separação de materiais recicláveis a céu aberto",
@@ -822,7 +836,7 @@
   "bairro": "Cafezal",
   "lat": -23.3715,
   "lon": -51.1396,
-  "situacao": "nao_apta",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Nascente canalizada",
@@ -857,7 +871,12 @@
    "Plantio de espécies nativas"
   ],
   "laudo_fotografico": "Anexo G – P38",
-  "nota": ""
+  "nota": "",
+  "itens_sema": [
+   7,
+   8,
+   9
+  ]
  },
  {
   "ponto": 39,
@@ -887,7 +906,7 @@
   "bairro": "Portal de Versalhes",
   "lat": -23.3334,
   "lon": -51.1957,
-  "situacao": "executada",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbana, em processo de expansão",
    "Terreno particular",
@@ -907,7 +926,7 @@
   "bairro": "Jardim Alphaville",
   "lat": -23.353,
   "lon": -51.1846,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Presença de espécies nativas na vegetação: Fumo-bravo, Angico",
@@ -928,7 +947,7 @@
   "bairro": "Fundos do Cafezal",
   "lat": -23.3739,
   "lon": -51.1628,
-  "situacao": "em_analise",
+  "situacao": "a_avaliar",
   "diagnostico": [
    "Área urbanizada",
    "Presença de ocupação irregular",

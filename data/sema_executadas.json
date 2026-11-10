@@ -1,0 +1,162 @@
+[
+ {
+  "item": 1,
+  "local": "Córrego Roseira",
+  "lat": -23.356451,
+  "lon": -51.144388,
+  "ponto_laudo": 27,
+  "nota": ""
+ },
+ {
+  "item": 2,
+  "local": "Córrego Roseira",
+  "lat": -23.35655,
+  "lon": -51.144506,
+  "ponto_laudo": 27,
+  "nota": ""
+ },
+ {
+  "item": 3,
+  "local": "Córrego Roseira",
+  "lat": -23.356631,
+  "lon": -51.144251,
+  "ponto_laudo": 27,
+  "nota": ""
+ },
+ {
+  "item": 4,
+  "local": "Córrego Ouro Verde",
+  "lat": -23.278703,
+  "lon": -51.179495,
+  "ponto_laudo": 11,
+  "nota": ""
+ },
+ {
+  "item": 5,
+  "local": "Córrego Baroré",
+  "lat": -23.302804,
+  "lon": -51.194002,
+  "ponto_laudo": 29,
+  "nota": ""
+ },
+ {
+  "item": 6,
+  "local": "Córrego Guarujá",
+  "lat": -23.328207,
+  "lon": -51.151009,
+  "ponto_laudo": 30,
+  "nota": ""
+ },
+ {
+  "item": 7,
+  "local": "Córrego Jerimú",
+  "lat": -23.385613,
+  "lon": -51.130093,
+  "ponto_laudo": 38,
+  "nota": ""
+ },
+ {
+  "item": 8,
+  "local": "Córrego Jerimú",
+  "lat": -23.38592,
+  "lon": -51.130084,
+  "ponto_laudo": 38,
+  "nota": ""
+ },
+ {
+  "item": 9,
+  "local": "Córrego Jerimú",
+  "lat": -23.385902,
+  "lon": -51.130103,
+  "ponto_laudo": 38,
+  "nota": ""
+ },
+ {
+  "item": 10,
+  "local": "Horta Comunitária Nova Esperança",
+  "lat": -23.389319,
+  "lon": -51.114214,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 11,
+  "local": "Aterro Lago Igapó",
+  "lat": -23.3226,
+  "lon": -51.1798,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 12,
+  "local": "Aterro Lago Igapó",
+  "lat": -23.322575,
+  "lon": -51.179841,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 13,
+  "local": "Aterro Lago Igapó",
+  "lat": -23.322085,
+  "lon": -51.180568,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 14,
+  "local": "Paulo Damario",
+  "lat": -23.6883,
+  "lon": -51.1173,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 15,
+  "local": "Cláudio da Silva",
+  "lat": -23.6954,
+  "lon": -51.1113,
+  "ponto_laudo": null,
+  "nota": "Coordenada impressa sem o ponto decimal na lista da SEMA; corrigida."
+ },
+ {
+  "item": 16,
+  "local": "Airton",
+  "lat": -23.6952,
+  "lon": -51.1096,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 17,
+  "local": "Conjunto Cafezal",
+  "lat": -23.3655,
+  "lon": -51.1542,
+  "ponto_laudo": null,
+  "nota": "Longitude impressa sem o ponto decimal na lista da SEMA; corrigida."
+ },
+ {
+  "item": 18,
+  "local": "Conjunto Cafezal",
+  "lat": -23.3656,
+  "lon": -51.1546,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 19,
+  "local": "São Marcus",
+  "lat": -23.3666,
+  "lon": -51.1297,
+  "ponto_laudo": null,
+  "nota": ""
+ },
+ {
+  "item": 20,
+  "local": "Ernani Moura Lima",
+  "lat": -23.3295,
+  "lon": -51.1092,
+  "ponto_laudo": null,
+  "nota": "Longitude impressa com vírgula na lista da SEMA; corrigida."
+ }
+]
