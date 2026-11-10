@@ -1,124 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nascentes de Londrina – simulação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nascentes de Londrina – CS Consultoria Ambiental</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Public+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css?v=20261110">
 <style>
-:root{--bg:#0E2A21;--panel:#13352A;--fg:#F2F5EF;--muted:#A9C4B8;--line:#24493C;--accent:#5FD3C6;
-  --executada:#3FB950;--em_analise:#F2C14E;--nao_apta:#E5534B;--a_confirmar:#B48CDB;--sem_coordenada:#7E8C86}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0}
-body{background:var(--bg);color:var(--fg);font:15px/1.5 "Public Sans",system-ui,sans-serif;display:grid;grid-template-columns:380px 1fr;grid-template-rows:100%}
-@media (max-width:800px){body{grid-template-columns:1fr;grid-template-rows:auto 60vh}aside{order:2}}
-aside{background:var(--panel);overflow:auto;padding:22px 20px;display:flex;flex-direction:column;gap:16px;border-right:1px solid var(--line)}
-#map{height:100%;min-height:360px}
-h1{font:900 26px/1.1 Archivo,"Arial Narrow",sans-serif;margin:0}
-h2{font:800 15px Archivo,sans-serif;margin:0}
-.eyebrow{font:700 11px "Public Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.sim{border:1px dashed var(--accent);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--muted)}
-.box{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px}
-.legend label{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px}
-.legend input{accent-color:var(--accent)}
-.dot{width:13px;height:13px;border-radius:50%;flex:none;border:2px solid #0b1d16}
-.n{margin-left:auto;font:700 17px Archivo,sans-serif;font-variant-numeric:tabular-nums}
-.bar{display:flex;height:10px;border-radius:5px;overflow:hidden}
-.list{display:grid;gap:2px;max-height:280px;overflow:auto}
-.item{display:flex;gap:10px;align-items:center;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:13px;border:0;background:none;color:inherit;text-align:left;width:100%}
-.item:hover,.item:focus-visible,.item[aria-current="true"]{background:var(--line);outline:none}
-.item b{font-variant-numeric:tabular-nums;min-width:22px;display:inline-block}
-.muted{color:var(--muted);font-size:12px}
-#ficha[hidden]{display:none}
-#ficha .top{display:flex;justify-content:space-between;gap:8px;align-items:start}
-#ficha h3{margin:0;font:800 19px/1.2 Archivo,sans-serif}
-#ficha dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13px}
-#ficha dt{color:var(--muted)}
-#ficha dd{margin:0}
-#ficha h4{margin:6px 0 2px;font:700 12px "Public Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-#ficha ul{margin:0;padding-left:18px;font-size:13.5px;display:grid;gap:3px}
-.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;color:#0b1d16}
-.close{background:none;border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:2px 9px;cursor:pointer;font:600 13px "Public Sans",sans-serif}
-.nota{font-size:12.5px;color:#F2C14E}
-a{color:var(--accent)}
-.leaflet-popup-content{font:13px/1.45 "Public Sans",sans-serif}
-.leaflet-popup-content h3{margin:0 0 2px;font:800 14px Archivo,sans-serif}
+:root{--executada:#2e9e5b;--em_analise:#f2c14e;--nao_apta:#e5534b;--a_confirmar:#9c6ad6;--sem_coordenada:#8a948f}
+#map{background:#1b2a22}
+.map-legend{z-index:500}
+.leaflet-popup-content-wrapper{border-radius:10px}
+.leaflet-popup-content{margin:12px 14px;font:inherit;font-size:.82rem;max-height:min(55vh,420px);overflow-y:auto}
+.popup h3{font-size:.95rem}
+.popup .status-badge{color:#1d2a22}
+.ficha-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ficha-top h2{margin:4px 0 0}
+.ficha-lista{margin:0 0 8px;padding-left:18px;font-size:.8rem;display:grid;gap:3px}
+.nota{font-size:.78rem;color:#8a5a00;background:#fff6dd;border-radius:6px;padding:6px 8px;margin:0 0 8px}
+.close-ficha{border:1px solid var(--borda);background:var(--painel);border-radius:8px;padding:4px 10px;font:inherit;font-size:.78rem;cursor:pointer}
+.farm-head .num{font-variant-numeric:tabular-nums;font-weight:700;min-width:22px}
+.farm.ativo{border-color:var(--verde);box-shadow:0 0 0 1px var(--verde)}
+.creditos{font-size:.78rem;line-height:1.5;margin:0}
+.creditos b{color:var(--verde-escuro)}
+.kpis.k2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:800px){.map-wrap{height:60vh}}
 </style>
 </head>
 <body>
-<aside>
-  <div>
-    <div class="eyebrow">Realização Cresol · Londrina</div>
-    <h1>Nascentes de Londrina</h1>
+<header class="topbar">
+  <img src="logo.png" alt="CS Consultoria Ambiental" class="logo">
+  <div class="topbar-title">
+    <h1>Ação de Proteção de Nascentes – Londrina/PR</h1>
+    <p>Nascentes do laudo Broto d'Água · controle e transparência · CS Consultoria Ambiental <span class="demo-badge">Versão de demonstração</span></p>
   </div>
-  <div class="sim"><b>Simulação.</b> Os 42 pontos e as fichas são do laudo do Projeto Broto d'Água. As situações (executada, em análise, não apta) são ilustrativas, para demonstrar o controle e a transparência.</div>
+  <button class="panel-toggle" id="panelToggle" aria-expanded="true" aria-controls="sidebar">Painel</button>
+</header>
 
-  <div class="box" id="ficha" hidden aria-live="polite"></div>
+<main class="layout">
+  <aside class="sidebar" id="sidebar">
+    <section class="card">
+      <h2 class="card-titulo">Resumo geral</h2>
+      <div class="kpis">
+        <div class="kpi"><span class="kpi-value" id="kTotal">–</span><span class="kpi-label">nascentes no laudo</span></div>
+        <div class="kpi"><span class="kpi-value" id="kExec">–</span><span class="kpi-label">executadas</span></div>
+        <div class="kpi"><span class="kpi-value" id="kAnalise">–</span><span class="kpi-label">em análise</span></div>
+      </div>
+      <div class="progress-label"><span>Andamento da proteção</span><strong id="kPct">0%</strong></div>
+      <div class="progress" id="progress" aria-label="Andamento por situação"></div>
+      <div class="status-legend" id="statusLegend"></div>
+      <p class="hint" style="margin:10px 0 0">Situações ilustrativas, para demonstrar o modelo de controle. Os pontos e as fichas são do laudo.</p>
+    </section>
 
-  <div class="box">
-    <h2>Situação</h2>
-    <div class="bar" id="bar"></div>
-    <div class="legend" id="legend"></div>
-  </div>
-  <div class="box">
-    <h2>Pontos do laudo</h2>
-    <div class="list" id="list"></div>
-  </div>
-  <div class="muted"><b style="color:var(--fg)">Realização:</b> Cresol · <b style="color:var(--fg)">Execução:</b> CS Consultoria Ambiental · <b style="color:var(--fg)">Apoio:</b> Instituto Biosimos</div>
-  <div class="muted">Fonte: laudo de vistoria do Projeto Broto d'Água, Londrina. Coordenadas e fichas transcritas do documento original. Sem dados pessoais.</div>
-</aside>
-<div id="map" role="region" aria-label="Mapa das nascentes"></div>
+    <section class="card" id="cardFicha" hidden aria-live="polite"></section>
+
+    <section class="card">
+      <h2 class="card-titulo">Camadas do mapa</h2>
+      <div class="controls">
+        <div class="camadas-lista" id="camadas"></div>
+        <span class="opc-titulo">Fundo do mapa</span>
+        <div class="segmented" role="group" aria-label="Fundo do mapa">
+          <button type="button" data-fundo="sat" class="active">Satélite</button>
+          <button type="button" data-fundo="mapa">Mapa</button>
+        </div>
+        <button type="button" class="btn" id="verTodas">Ver todas as nascentes</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-titulo">Nascentes</h2>
+      <p class="hint">Clique numa nascente para localizá-la no mapa e ver a ficha do laudo.</p>
+      <input type="search" id="busca" class="farm-search" placeholder="Buscar por número, nome ou bairro">
+      <div id="lista" class="farm-list"></div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-titulo">Sobre a Ação</h2>
+      <p class="creditos"><b>Realização:</b> Cresol · <b>Execução:</b> CS Consultoria Ambiental · <b>Apoio:</b> Instituto Biosimos</p>
+      <span class="fonte">Fonte: laudo de vistoria do Projeto Broto d'Água, Londrina. Coordenadas e fichas transcritas do documento original. Sem dados pessoais.</span>
+    </section>
+
+    <p class="footnote">Atualizado em 10/11/2026 · CS Consultoria Ambiental</p>
+  </aside>
+
+  <section class="map-wrap">
+    <div id="map" role="region" aria-label="Mapa das nascentes"></div>
+    <div id="legend" class="map-legend"></div>
+  </section>
+</main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-const SIT={executada:"Executadas",em_analise:"Em análise",nao_apta:"Não aptas",a_confirmar:"Localização a confirmar",sem_coordenada:"Sem coordenada"};
+const SIT={executada:'Executada',em_analise:'Em análise',nao_apta:'Não apta',a_confirmar:'Localização a confirmar',sem_coordenada:'Sem coordenada'};
+const SITP={executada:'Executadas',em_analise:'Em análise',nao_apta:'Não aptas',a_confirmar:'Localização a confirmar',sem_coordenada:'Sem coordenada'};
+const $=id=>document.getElementById(id);
 const col=k=>getComputedStyle(document.documentElement).getPropertyValue('--'+k).trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const map=L.map('map').setView([-23.31,-51.16],12);
-const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagem © Esri, Maxar, Earthstar Geographics'});
-const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'});
-sat.addTo(map);L.control.layers({'Satélite':sat,'Mapa':osm},null).addTo(map);
-const groups={};Object.keys(SIT).forEach(k=>groups[k]=L.layerGroup().addTo(map));
-const on=Object.fromEntries(Object.keys(SIT).map(k=>[k,true]));
-let pts=[],marks={};
+
+const map=L.map('map',{zoomControl:false}).setView([-23.31,-51.16],12);
+L.control.zoom({position:'topright'}).addTo(map);
+L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);
+const fundos={
+  sat:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagens © Esri, Maxar, Earthstar Geographics'}),
+  mapa:L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'})
+};
+fundos.sat.addTo(map);
+document.querySelectorAll('[data-fundo]').forEach(b=>b.onclick=()=>{
+  Object.values(fundos).forEach(l=>map.removeLayer(l));fundos[b.dataset.fundo].addTo(map);
+  document.querySelectorAll('[data-fundo]').forEach(x=>x.classList.toggle('active',x===b));});
+
+const grupos={},ligado={};Object.keys(SIT).forEach(k=>{grupos[k]=L.layerGroup().addTo(map);ligado[k]=true});
+let pts=[],marks={},atual=null;
+const cnt=k=>pts.filter(p=>p.situacao===k).length;
+
+function popup(p){return `<div class="popup"><span class="status-badge" style="background:${col(p.situacao)}">${esc(SIT[p.situacao])}</span>
+  <h3>${p.ponto} – ${esc(p.nome)}</h3><p>${esc(p.bairro||'')}${p.bairro?' · ':''}Bacia ${esc(p.bacia)}</p>
+  <p class="popup-hint">A ficha completa abre no painel.</p></div>`}
 
 function ficha(p){
-  const f=document.getElementById('ficha');f.hidden=false;
-  const li=a=>a.length?`<ul>${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'<div class="muted">Não informado na ficha.</div>';
-  f.innerHTML=`<div class="top"><div><span class="pill" style="background:${col(p.situacao)}">${esc(SIT[p.situacao])}</span>
-    <h3>${p.ponto} – ${esc(p.nome)}</h3></div><button class="close" type="button" id="fechar" aria-label="Fechar ficha">Fechar</button></div>
-    <dl><dt>Bacia</dt><dd>${esc(p.bacia)}</dd><dt>Bairro</dt><dd>${esc(p.bairro||'—')}</dd>
-    <dt>Coordenadas</dt><dd>${p.lat!=null?`<a href="https://www.google.com/maps?q=${p.lat},${p.lon}" target="_blank" rel="noopener">${p.lat}, ${p.lon}</a>`:'—'}</dd>
+  atual=p.ponto;const f=$('cardFicha');f.hidden=false;
+  const li=a=>a&&a.length?`<ul class="ficha-lista">${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'<p class="ficha-linha">Não informado na ficha.</p>';
+  f.innerHTML=`<div class="ficha-top"><div><span class="status-tag" style="background:${col(p.situacao)};color:#1d2a22">${esc(SIT[p.situacao])}</span>
+    <h2>${p.ponto} – ${esc(p.nome)}</h2></div><button class="close-ficha" type="button" id="fechar">Fechar</button></div>
+    <dl class="ficha-dl" style="margin-top:8px"><dt>Bacia</dt><dd>${esc(p.bacia)}</dd><dt>Bairro</dt><dd>${esc(p.bairro||'—')}</dd>
+    <dt>Coordenadas</dt><dd>${p.lat!=null?`<a class="link" href="https://www.google.com/maps?q=${p.lat},${p.lon}" target="_blank" rel="noopener">${p.lat}, ${p.lon}</a>`:'—'}</dd>
     <dt>Laudo fotográfico</dt><dd>${esc(p.laudo_fotografico||'—')}</dd></dl>
-    ${p.nota?`<div class="nota">${esc(p.nota)}</div>`:''}
-    <h4>Diagnóstico</h4>${li(p.diagnostico)}<h4>Recomendações</h4>${li(p.recomendacoes)}`;
-  document.getElementById('fechar').onclick=()=>{f.hidden=true;list()};
-  document.querySelectorAll('.item').forEach(b=>b.setAttribute('aria-current',b.dataset.p==p.ponto));
-  f.scrollIntoView({block:'nearest'});
+    ${p.nota?`<p class="nota">${esc(p.nota)}</p>`:''}
+    <p class="ficha-sub">Diagnóstico</p>${li(p.diagnostico)}<p class="ficha-sub">Recomendações</p>${li(p.recomendacoes)}`;
+  $('fechar').onclick=()=>{f.hidden=true;atual=null;lista()};
+  lista();f.scrollIntoView({block:'nearest',behavior:'smooth'});
 }
+
+function camadas(){
+  const el=$('camadas');el.innerHTML='<span class="camada-sub">Nascentes por situação</span>';
+  Object.keys(SIT).forEach(k=>{if(!cnt(k))return;const b=document.createElement('button');b.type='button';b.className='camada-row'+(ligado[k]?' ativo':'');
+    b.innerHTML=`<i class="ic-dot" style="background:${col(k)}"></i><span class="camada-nome">${SITP[k]} <span class="lg-n">${cnt(k)}</span></span><span class="chave"></span>`;
+    b.onclick=()=>{ligado[k]=!ligado[k];ligado[k]?grupos[k].addTo(map):map.removeLayer(grupos[k]);camadas();legenda();lista()};el.appendChild(b)});
+}
+function legenda(){
+  $('legend').innerHTML=`<details open><summary>Legenda</summary>
+    <div class="lg-group">Nascentes do laudo (${pts.length})</div>
+    ${Object.keys(SIT).filter(cnt).map(k=>`<div class="lg-item${ligado[k]?'':' lg-off'}"><i class="lg-dot" style="background:${col(k)}"></i>${SITP[k]} (${cnt(k)})</div>`).join('')}
+    </details>`;
+}
+function lista(){
+  const q=$('busca').value.trim().toLowerCase();const el=$('lista');el.innerHTML='';
+  pts.filter(p=>ligado[p.situacao]).filter(p=>!q||`${p.ponto} ${p.nome} ${p.bairro||''}`.toLowerCase().includes(q)).forEach(p=>{
+    const d=document.createElement('div');d.className='farm'+(atual===p.ponto?' ativo':'');
+    d.innerHTML=`<button type="button" class="farm-head"><span class="swatch" style="background:${col(p.situacao)}"></span><span class="num">${p.ponto}</span><span class="farm-name">${esc(p.nome)}</span><span class="farm-meta">${esc(p.bairro||'sem ficha')}</span></button>`;
+    d.querySelector('button').onclick=()=>{if(marks[p.ponto]){map.setView(marks[p.ponto].getLatLng(),16);marks[p.ponto].openPopup()}ficha(p)};
+    el.appendChild(d)});
+  if(!el.children.length)el.innerHTML='<p class="hint" style="margin:0">Nenhuma nascente encontrada com esse filtro.</p>';
+}
+function verTodas(){const g=L.featureGroup(Object.values(marks));if(g.getLayers().length)map.fitBounds(g.getBounds().pad(.08))}
 
 fetch('data/nascentes.json').then(r=>r.json()).then(d=>{
   pts=d;
   pts.filter(p=>p.lat!=null).forEach(p=>{
-    const m=L.circleMarker([p.lat,p.lon],{radius:9,color:'#0b1d16',weight:2,fillColor:col(p.situacao),fillOpacity:.95});
-    m.bindTooltip(`${p.ponto} – ${esc(p.nome)}`);
-    m.on('click',()=>ficha(p));
-    m.addTo(groups[p.situacao]);marks[p.ponto]=m;
+    const m=L.circleMarker([p.lat,p.lon],{radius:9,color:'#ffffff',weight:2,fillColor:col(p.situacao),fillOpacity:.95});
+    m.bindTooltip(`${p.ponto} – ${esc(p.nome)}`);m.bindPopup(popup(p),{maxWidth:300});
+    m.on('click',()=>ficha(p));m.addTo(grupos[p.situacao]);marks[p.ponto]=m;
   });
-  map.fitBounds(L.featureGroup(Object.values(marks)).getBounds().pad(.06));
-  const cnt=k=>pts.filter(p=>p.situacao===k).length;
-  document.getElementById('bar').innerHTML=Object.keys(SIT).map(k=>`<span style="flex:${cnt(k)};background:${col(k)}"></span>`).join('');
-  const lg=document.getElementById('legend');
-  Object.entries(SIT).forEach(([k,l])=>{if(!cnt(k))return;const lab=document.createElement('label');
-    lab.innerHTML=`<input type="checkbox" id="f-${k}" checked><span class="dot" style="background:${col(k)}"></span>${l}<span class="n">${cnt(k)}</span>`;
-    lab.querySelector('input').onchange=e=>{on[k]=e.target.checked;on[k]?groups[k].addTo(map):map.removeLayer(groups[k]);list()};lg.appendChild(lab)});
-  list();
+  const tot=pts.length,ex=cnt('executada');
+  $('kTotal').textContent=tot;$('kExec').textContent=ex;$('kAnalise').textContent=cnt('em_analise');
+  $('kPct').textContent=Math.round(100*ex/tot)+'%';
+  $('progress').innerHTML=Object.keys(SIT).filter(cnt).map(k=>`<span style="flex:${cnt(k)};background:${col(k)}" title="${SITP[k]}: ${cnt(k)}"></span>`).join('');
+  $('statusLegend').innerHTML=Object.keys(SIT).filter(cnt).map(k=>`<span class="chip"><i style="background:${col(k)}"></i>${SITP[k]} ${cnt(k)}</span>`).join('');
+  camadas();legenda();lista();verTodas();
 });
-function list(){const el=document.getElementById('list');el.innerHTML='';
-  pts.filter(p=>on[p.situacao]).forEach(p=>{const b=document.createElement('button');b.className='item';b.type='button';b.dataset.p=p.ponto;
-    b.innerHTML=`<span class="dot" style="background:${col(p.situacao)}"></span><span><b>${p.ponto}</b> ${esc(p.nome)}<br><span class="muted">${esc(p.bairro||'sem ficha')}</span></span>`;
-    b.onclick=()=>{if(marks[p.ponto])map.setView(marks[p.ponto].getLatLng(),16);ficha(p)};el.appendChild(b)})}
+$('busca').addEventListener('input',lista);
+$('verTodas').onclick=verTodas;
+document.querySelectorAll('.card-titulo').forEach(h=>h.onclick=()=>h.parentElement.classList.toggle('fechado'));
+$('panelToggle').onclick=()=>{const c=document.body.classList.toggle('panel-closed');$('panelToggle').setAttribute('aria-expanded',!c);setTimeout(()=>map.invalidateSize(),50)};
 </script>
 </body>
 </html>
