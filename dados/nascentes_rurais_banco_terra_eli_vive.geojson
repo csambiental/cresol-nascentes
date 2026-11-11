@@ -1,0 +1,383 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A1",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Sem nome do responsável na lista."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1138,
+     -23.6892
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A2",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Sem nome do responsável na lista."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.115,
+     -23.6902
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A3",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "A 75 m do item A4 (já executado pela SEMA): conferir se é outra nascente."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1166,
+     -23.6881
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A4",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Executada pela SEMA",
+    "item_sema": 14,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1173,
+     -23.6883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A5",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1167,
+     -23.6901
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A6",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Executada pela SEMA",
+    "item_sema": 15,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1113,
+     -23.6954
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "A7",
+    "area": "Banco da Terra",
+    "brigada": "",
+    "situacao": "Executada pela SEMA",
+    "item_sema": 16,
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.1096,
+     -23.6952
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B01",
+    "area": "Assentamento Eli Vive",
+    "brigada": "06",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0507,
+     -23.5971
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B02",
+    "area": "Assentamento Eli Vive",
+    "brigada": "08",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0529,
+     -23.6167
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B03",
+    "area": "Assentamento Eli Vive",
+    "brigada": "09",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.02,
+     -23.5995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B04",
+    "area": "Assentamento Eli Vive",
+    "brigada": "09",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0203,
+     -23.6018
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B05",
+    "area": "Assentamento Eli Vive",
+    "brigada": "03",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.012,
+     -23.6045
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B06",
+    "area": "Assentamento Eli Vive",
+    "brigada": "10",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Mesmo lote do B07, mas a 1,1 km de distância: conferir a coordenada."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0075,
+     -23.6091
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B07",
+    "area": "Assentamento Eli Vive",
+    "brigada": "10",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Mesmo lote do B06, mas a 1,1 km de distância: conferir a coordenada."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0077,
+     -23.619
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B08",
+    "area": "Assentamento Eli Vive",
+    "brigada": "03",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Mesmo lote do B09, a cerca de 100 m: provavelmente duas nascentes no lote."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0322,
+     -23.6106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B09",
+    "area": "Assentamento Eli Vive",
+    "brigada": "03",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Mesmo lote do B08, a cerca de 100 m: provavelmente duas nascentes no lote."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.033,
+     -23.6111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B10",
+    "area": "Assentamento Eli Vive",
+    "brigada": "08",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Mesmo lote e a 10 m do B11: provavelmente a mesma nascente."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0263,
+     -23.6241
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B11",
+    "area": "Assentamento Eli Vive",
+    "brigada": "08",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Mesmo lote e a 10 m do B10: provavelmente a mesma nascente."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0262,
+     -23.6241
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B12",
+    "area": "Assentamento Eli Vive",
+    "brigada": "07",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0341,
+     -23.6418
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B13",
+    "area": "Assentamento Eli Vive",
+    "brigada": "10",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": ""
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0172,
+     -23.6222
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "item": "B14",
+    "area": "Assentamento Eli Vive",
+    "brigada": "02",
+    "situacao": "Candidata",
+    "item_sema": "",
+    "nota": "Latitude impressa como -2123.6496 na lista; corrigida para -23.6496."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -51.0574,
+     -23.6496
+    ]
+   }
+  }
+ ]
+}

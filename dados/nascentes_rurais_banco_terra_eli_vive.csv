@@ -1,0 +1,22 @@
+﻿item;area;brigada;situacao;item_sema;lat;lon;nota
+A1;Banco da Terra;;Candidata;;-23.6892;-51.1138;Sem nome do responsável na lista.
+A2;Banco da Terra;;Candidata;;-23.6902;-51.115;Sem nome do responsável na lista.
+A3;Banco da Terra;;Candidata;;-23.6881;-51.1166;A 75 m do item A4 (já executado pela SEMA): conferir se é outra nascente.
+A4;Banco da Terra;;Executada pela SEMA;14;-23.6883;-51.1173;
+A5;Banco da Terra;;Candidata;;-23.6901;-51.1167;
+A6;Banco da Terra;;Executada pela SEMA;15;-23.6954;-51.1113;
+A7;Banco da Terra;;Executada pela SEMA;16;-23.6952;-51.1096;
+B01;Assentamento Eli Vive;06;Candidata;;-23.5971;-51.0507;
+B02;Assentamento Eli Vive;08;Candidata;;-23.6167;-51.0529;
+B03;Assentamento Eli Vive;09;Candidata;;-23.5995;-51.02;
+B04;Assentamento Eli Vive;09;Candidata;;-23.6018;-51.0203;
+B05;Assentamento Eli Vive;03;Candidata;;-23.6045;-51.012;
+B06;Assentamento Eli Vive;10;Candidata;;-23.6091;-51.0075;Mesmo lote do B07, mas a 1,1 km de distância: conferir a coordenada.
+B07;Assentamento Eli Vive;10;Candidata;;-23.619;-51.0077;Mesmo lote do B06, mas a 1,1 km de distância: conferir a coordenada.
+B08;Assentamento Eli Vive;03;Candidata;;-23.6106;-51.0322;Mesmo lote do B09, a cerca de 100 m: provavelmente duas nascentes no lote.
+B09;Assentamento Eli Vive;03;Candidata;;-23.6111;-51.033;Mesmo lote do B08, a cerca de 100 m: provavelmente duas nascentes no lote.
+B10;Assentamento Eli Vive;08;Candidata;;-23.6241;-51.0263;Mesmo lote e a 10 m do B11: provavelmente a mesma nascente.
+B11;Assentamento Eli Vive;08;Candidata;;-23.6241;-51.0262;Mesmo lote e a 10 m do B10: provavelmente a mesma nascente.
+B12;Assentamento Eli Vive;07;Candidata;;-23.6418;-51.0341;
+B13;Assentamento Eli Vive;10;Candidata;;-23.6222;-51.0172;
+B14;Assentamento Eli Vive;02;Candidata;;-23.6496;-51.0574;"Latitude impressa como -2123.6496 na lista; corrigida para -23.6496."

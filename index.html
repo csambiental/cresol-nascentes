@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="css/style.css?v=20261110">
 <style>
-:root{--executada:#2e9e5b;--a_avaliar:#f2c14e;--a_confirmar:#9c6ad6;--sem_coordenada:#8a948f;--sema:#0f7a4a}
+:root{--rural:#3b82f6;--executada:#2e9e5b;--a_avaliar:#f2c14e;--a_confirmar:#9c6ad6;--sem_coordenada:#8a948f;--sema:#0f7a4a}
 .sema-ic{width:18px;height:18px;transform:rotate(45deg);background:var(--sema);border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.35);border-radius:3px;display:grid;place-items:center}
 .sema-ic span{transform:rotate(-45deg);color:#fff;font:700 11px system-ui;line-height:1}
 .lg-sema{width:12px;height:12px;transform:rotate(45deg);background:var(--sema);border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.3);border-radius:2px}
@@ -36,7 +36,7 @@
   <img src="logo.png" alt="CS Consultoria Ambiental" class="logo">
   <div class="topbar-title">
     <h1>Ação de Proteção de Nascentes – Londrina/PR</h1>
-    <p>Nascentes do laudo Broto d'Água e execuções da SEMA · controle e transparência · CS Consultoria Ambiental <span class="demo-badge">Versão de demonstração</span></p>
+    <p>Laudo Broto d'Água, execuções da SEMA e nascentes rurais · controle e transparência · CS Consultoria Ambiental <span class="demo-badge">Versão de demonstração</span></p>
   </div>
   <button class="panel-toggle" id="panelToggle" aria-expanded="true" aria-controls="sidebar">Painel</button>
 </header>
@@ -53,6 +53,7 @@
       <div class="progress-label"><span>Nascentes do laudo já atendidas</span><strong id="kPct">0%</strong></div>
       <div class="progress" id="progress" aria-label="Situação das nascentes do laudo"></div>
       <div class="status-legend" id="statusLegend"></div>
+      <div class="kpis" style="margin:12px 0 0"><div class="kpi"><span class="kpi-value" id="kRural">–</span><span class="kpi-label">pontos rurais mapeados</span></div><div class="kpi"><span class="kpi-value" id="kCand">–</span><span class="kpi-label">candidatos à Ação</span></div><div class="kpi"><span class="kpi-value" id="kRuralEx">–</span><span class="kpi-label">já executados pela SEMA</span></div></div>
       <p class="hint" style="margin:10px 0 0">Execuções conforme a lista de nascentes executadas informada pela SEMA. As demais nascentes do laudo ainda serão avaliadas.</p>
     </section>
 
@@ -76,7 +77,8 @@
       <h2 class="card-titulo">Nascentes</h2>
       <div class="segmented abas" role="group" aria-label="Qual lista mostrar">
         <button type="button" data-aba="laudo" class="active">Laudo (42)</button>
-        <button type="button" data-aba="sema">Executadas SEMA (20)</button>
+        <button type="button" data-aba="sema">SEMA (20)</button>
+        <button type="button" data-aba="rural">Rurais (21)</button>
       </div>
       <p class="hint" id="listaHint">Clique numa nascente para localizá-la no mapa e ver a ficha do laudo.</p>
       <input type="search" id="busca" class="farm-search" placeholder="Buscar por número, nome ou bairro">
@@ -90,13 +92,15 @@
       <div class="lic-filtros"><a class="busca-chip" href="dados/nascentes_laudo_broto_dagua.csv" download>CSV</a><a class="busca-chip" href="dados/nascentes_laudo_broto_dagua.geojson" download>GeoJSON</a><a class="busca-chip" href="dados/nascentes_laudo_broto_dagua.kml" download>KML</a><a class="busca-chip" href="dados/nascentes_laudo_broto_dagua_shp.zip" download>Shapefile</a></div>
       <p class="ficha-sub">Executadas pela SEMA (20 pontos)</p>
       <div class="lic-filtros"><a class="busca-chip" href="dados/nascentes_executadas_sema.csv" download>CSV</a><a class="busca-chip" href="dados/nascentes_executadas_sema.geojson" download>GeoJSON</a><a class="busca-chip" href="dados/nascentes_executadas_sema.kml" download>KML</a><a class="busca-chip" href="dados/nascentes_executadas_sema_shp.zip" download>Shapefile</a></div>
+      <p class="ficha-sub">Nascentes rurais – Banco da Terra e Eli Vive (21 pontos)</p>
+      <div class="lic-filtros"><a class="busca-chip" href="dados/nascentes_rurais_banco_terra_eli_vive.csv" download>CSV</a><a class="busca-chip" href="dados/nascentes_rurais_banco_terra_eli_vive.geojson" download>GeoJSON</a><a class="busca-chip" href="dados/nascentes_rurais_banco_terra_eli_vive.kml" download>KML</a><a class="busca-chip" href="dados/nascentes_rurais_banco_terra_eli_vive_shp.zip" download>Shapefile</a></div>
       <span class="fonte">Descrição dos campos e notas de qualidade no <a href="https://github.com/csambiental/cresol-nascentes#readme" target="_blank" rel="noopener">repositório</a>.</span>
     </section>
 
     <section class="card">
       <h2 class="card-titulo">Sobre a Ação</h2>
       <p class="creditos"><b>Realização:</b> Cresol · <b>Execução:</b> CS Consultoria Ambiental · <b>Apoio:</b> Instituto Biosimos</p>
-      <span class="fonte">Fontes: laudo de vistoria do Projeto Broto d'Água, Londrina (coordenadas e fichas transcritas do documento original); lista de nascentes executadas da SEMA Londrina, fonte oficial (recebida em 10/11/2026); limite municipal: IBGE.</span>
+      <span class="fonte">Fontes: laudo de vistoria do Projeto Broto d'Água, Londrina (coordenadas e fichas transcritas do documento original); lista de nascentes executadas da SEMA Londrina, fonte oficial (recebida em 10/11/2026); lista de nascentes em áreas rurais (Banco da Terra e Eli Vive); limite municipal: IBGE.</span>
     </section>
 
     <p class="footnote">Atualizado em 10/11/2026 · CS Consultoria Ambiental</p>
@@ -128,12 +132,15 @@ document.querySelectorAll('[data-fundo]').forEach(b=>b.onclick=()=>{
   Object.values(fundos).forEach(l=>map.removeLayer(l));fundos[b.dataset.fundo].addTo(map);
   document.querySelectorAll('[data-fundo]').forEach(x=>x.classList.toggle('active',x===b));});
 
-let pts=[],sema=[],marks={},semaMarks={},atual=null,aba='laudo',limiteOn=true,semaOn=true;
+let pts=[],sema=[],rural=[],marks={},semaMarks={},ruralMarks={},atual=null,aba='laudo',limiteOn=true,semaOn=true,ruralOn=true;
 const limite=L.geoJSON(null,{style:{color:'#ffd54f',weight:3,fill:false},interactive:false});
 const limiteSombra=L.geoJSON(null,{style:{color:'#000',weight:6,opacity:.35,fill:false},interactive:false});
 fetch('data/limite_londrina.geojson').then(r=>r.json()).then(g=>{limiteSombra.addData(g).addTo(map);limite.addData(g).addTo(map);limiteSombra.bringToBack()});
 const grupos={},ligado={};Object.keys(SIT).forEach(k=>{grupos[k]=L.layerGroup().addTo(map);ligado[k]=true});
 const grupoSema=L.layerGroup().addTo(map);
+const grupoRural=L.layerGroup().addTo(map);
+const ruralLabel=r=>r.area+(r.brigada?' · Brigada '+r.brigada:'');
+const ruralCor=r=>r.situacao==='executada'?'var(--executada)':'var(--rural)';
 const cnt=k=>pts.filter(p=>p.situacao===k).length;
 const semaIcon=n=>L.divIcon({className:'',html:`<div class="sema-ic"><span>${n}</span></div>`,iconSize:[18,18],iconAnchor:[9,9]});
 
@@ -175,6 +182,18 @@ function fichaSema(s){
   lista();f.scrollIntoView({block:'nearest',behavior:'smooth'});
 }
 
+function popupRural(r){return `<div class="popup"><span class="status-badge" style="background:${r.situacao==='executada'?'#2e9e5b':'#3b82f6'};color:#fff">${r.situacao==='executada'?'Executada pela SEMA':'Candidata à Ação'}</span>
+  <h3>${r.item} – ${esc(ruralLabel(r))}</h3><p>${r.lat.toFixed(4)}, ${r.lon.toFixed(4)}</p>${r.item_sema?`<p>Item ${r.item_sema} da lista de executadas da SEMA.</p>`:''}${r.nota?`<p class="popup-hint">${esc(r.nota)}</p>`:''}</div>`}
+function fichaRural(r){
+  atual='R'+r.item;const f=$('cardFicha');f.hidden=false;
+  f.innerHTML=`<div class="ficha-top"><div><span class="status-tag" style="background:${r.situacao==='executada'?'#2e9e5b':'#3b82f6'};color:#fff">${r.situacao==='executada'?'Executada pela SEMA':'Candidata à Ação'}</span>
+    <h2>${r.item} – ${esc(ruralLabel(r))}</h2></div><button class="close-ficha" type="button" id="fechar">Fechar</button></div>
+    <dl class="ficha-dl" style="margin-top:8px"><dt>Área</dt><dd>${esc(r.area)}</dd>${r.brigada?`<dt>Brigada</dt><dd>${r.brigada}</dd>`:''}
+    <dt>Coordenadas</dt><dd><a class="link" href="https://www.google.com/maps?q=${r.lat},${r.lon}" target="_blank" rel="noopener">${r.lat.toFixed(4)}, ${r.lon.toFixed(4)}</a></dd>
+    <dt>Fonte</dt><dd>Lista de nascentes em áreas rurais (Banco da Terra e Eli Vive)</dd>${r.item_sema?`<dt>Lista SEMA</dt><dd>Executada · item ${r.item_sema}</dd>`:''}</dl>
+    ${r.nota?`<p class="nota">${esc(r.nota)}</p>`:''}`;
+  $('fechar').onclick=()=>{f.hidden=true;atual=null;lista()};lista();f.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
 function linha(el,ic,nome,meta,on){const b=document.createElement('button');b.type='button';b.className='camada-row'+(on?' ativo':'');
   b.innerHTML=`${ic}<span class="camada-nome">${nome}</span><span class="chave"></span>`;el.appendChild(b);return b}
 function camadas(){
@@ -182,6 +201,8 @@ function camadas(){
   linha(el,'<i class="ic-line" style="border-color:#ffd54f"></i>','Limite do município','',limiteOn).onclick=()=>{limiteOn=!limiteOn;[limiteSombra,limite].forEach(l=>limiteOn?l.addTo(map):map.removeLayer(l));camadas();legenda()};
   el.insertAdjacentHTML('beforeend','<span class="camada-sub">Execuções da SEMA</span>');
   linha(el,'<i class="lg-sema" style="flex:0 0 12px;margin:0 2px"></i>',`Nascentes executadas <span class="lg-n">${sema.length}</span>`,'',semaOn).onclick=()=>{semaOn=!semaOn;semaOn?grupoSema.addTo(map):map.removeLayer(grupoSema);camadas();legenda()};
+  el.insertAdjacentHTML('beforeend','<span class="camada-sub">Áreas rurais</span>');
+  linha(el,'<i class="ic-dot" style="background:var(--rural)"></i>',`Banco da Terra e Eli Vive <span class="lg-n">${rural.length}</span>`,'',ruralOn).onclick=()=>{ruralOn=!ruralOn;ruralOn?grupoRural.addTo(map):map.removeLayer(grupoRural);camadas();legenda()};
   el.insertAdjacentHTML('beforeend','<span class="camada-sub">Laudo Broto d\'Água</span>');
   Object.keys(SIT).forEach(k=>{if(!cnt(k))return;
     linha(el,`<i class="ic-dot" style="background:${col(k)}"></i>`,`${SITP[k]} <span class="lg-n">${cnt(k)}</span>`,'',ligado[k]).onclick=()=>{ligado[k]=!ligado[k];ligado[k]?grupos[k].addTo(map):map.removeLayer(grupos[k]);camadas();legenda();lista()}});
@@ -192,6 +213,9 @@ function legenda(){
     <div class="lg-item${limiteOn?'':' lg-off'}"><i class="lg-area" style="border-color:#ffd54f;background:transparent"></i>Londrina</div>
     <div class="lg-group">Execuções da SEMA</div>
     <div class="lg-item${semaOn?'':' lg-off'}"><i class="lg-sema"></i>Nascentes executadas (${sema.length})</div>
+    <div class="lg-group">Áreas rurais – Banco da Terra e Eli Vive</div>
+    <div class="lg-item${ruralOn?'':' lg-off'}"><i class="lg-dot" style="background:var(--rural)"></i>Candidatas à Ação (${rural.filter(r=>r.situacao==='candidata').length})</div>
+    <div class="lg-item${ruralOn?'':' lg-off'}"><i class="lg-dot" style="background:var(--executada)"></i>Já executadas pela SEMA (${rural.filter(r=>r.situacao==='executada').length})</div>
     <div class="lg-group">Laudo Broto d'Água (${pts.length})</div>
     ${Object.keys(SIT).filter(cnt).map(k=>`<div class="lg-item${ligado[k]?'':' lg-off'}"><i class="lg-dot" style="background:${col(k)}"></i>${SITP[k]} (${cnt(k)})</div>`).join('')}
     </details>`;
@@ -203,6 +227,11 @@ function lista(){
       const d=document.createElement('div');d.className='farm'+(atual==='L'+p.ponto?' ativo':'');
       d.innerHTML=`<button type="button" class="farm-head"><span class="swatch" style="background:${col(p.situacao)}"></span><span class="num">${p.ponto}</span><span class="farm-name">${esc(p.nome)}</span><span class="farm-meta">${esc(p.bairro||'sem ficha')}</span></button>`;
       d.querySelector('button').onclick=()=>{if(marks[p.ponto]){map.setView(marks[p.ponto].getLatLng(),16);marks[p.ponto].openPopup()}ficha(p)};el.appendChild(d)});
+  }else if(aba==='rural'){
+    rural.filter(r=>!q||`${r.item} ${ruralLabel(r)}`.toLowerCase().includes(q)).forEach(r=>{
+      const d=document.createElement('div');d.className='farm'+(atual==='R'+r.item?' ativo':'');
+      d.innerHTML=`<button type="button" class="farm-head"><span class="swatch" style="background:${ruralCor(r)}"></span><span class="num">${r.item}</span><span class="farm-name">${esc(ruralLabel(r))}</span><span class="farm-meta">${r.situacao==='executada'?'executada':'candidata'}</span></button>`;
+      d.querySelector('button').onclick=()=>{if(!ruralOn){ruralOn=true;grupoRural.addTo(map);camadas();legenda()}map.setView(ruralMarks[r.item].getLatLng(),16);ruralMarks[r.item].openPopup();fichaRural(r)};el.appendChild(d)});
   }else{
     sema.filter(s=>!q||`${s.item} ${s.local}`.toLowerCase().includes(q)).forEach(s=>{
       const d=document.createElement('div');d.className='farm'+(atual==='S'+s.item?' ativo':'');
@@ -212,11 +241,14 @@ function lista(){
   if(!el.children.length)el.innerHTML='<p class="hint" style="margin:0">Nenhuma nascente encontrada com esse filtro.</p>';
 }
 document.querySelectorAll('[data-aba]').forEach(b=>b.onclick=()=>{aba=b.dataset.aba;document.querySelectorAll('[data-aba]').forEach(x=>x.classList.toggle('active',x===b));
-  $('listaHint').textContent=aba==='laudo'?'Clique numa nascente para localizá-la no mapa e ver a ficha do laudo.':'Pontos da lista de nascentes executadas informada pela SEMA.';lista()});
-function verTodas(){const g=L.featureGroup([...Object.values(marks),...Object.values(semaMarks)]);if(g.getLayers().length)map.fitBounds(g.getBounds().pad(.08))}
+  $('listaHint').textContent={laudo:'Clique numa nascente para localizá-la no mapa e ver a ficha do laudo.',sema:'Pontos da lista de nascentes executadas informada pela SEMA.',rural:'Nascentes mapeadas em áreas rurais: Banco da Terra e Assentamento Eli Vive.'}[aba];lista()});
+function verTodas(){const g=L.featureGroup([...Object.values(marks),...Object.values(semaMarks),...Object.values(ruralMarks)]);if(g.getLayers().length)map.fitBounds(g.getBounds().pad(.08))}
 
-Promise.all([fetch('data/nascentes.json').then(r=>r.json()),fetch('data/sema_executadas.json').then(r=>r.json())]).then(([d,s])=>{
-  pts=d;sema=s;
+Promise.all([fetch('data/nascentes.json').then(r=>r.json()),fetch('data/sema_executadas.json').then(r=>r.json()),fetch('data/nascentes_rurais.json').then(r=>r.json())]).then(([d,s,ru])=>{
+  pts=d;sema=s;rural=ru;
+  rural.forEach(r=>{const m=L.circleMarker([r.lat,r.lon],{radius:8,color:'#ffffff',weight:2,fillColor:r.situacao==='executada'?'#2e9e5b':'#3b82f6',fillOpacity:.95});
+    m.bindTooltip(`${r.item} – ${esc(ruralLabel(r))}`);m.bindPopup(popupRural(r),{maxWidth:300});m.on('click',()=>fichaRural(r));m.addTo(grupoRural);ruralMarks[r.item]=m});
+  $('kRural').textContent=rural.length;$('kCand').textContent=rural.filter(r=>r.situacao==='candidata').length;$('kRuralEx').textContent=rural.filter(r=>r.situacao==='executada').length;
   pts.filter(p=>p.lat!=null).forEach(p=>{
     const m=L.circleMarker([p.lat,p.lon],{radius:9,color:'#ffffff',weight:2,fillColor:col(p.situacao),fillOpacity:.95});
     m.bindTooltip(`${p.ponto} – ${esc(p.nome)}`);m.bindPopup(popupLaudo(p),{maxWidth:300});

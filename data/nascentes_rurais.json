@@ -1,0 +1,212 @@
+[
+ {
+  "item": "A1",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6892,
+  "lon": -51.1138,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Sem nome do responsável na lista."
+ },
+ {
+  "item": "A2",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6902,
+  "lon": -51.115,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Sem nome do responsável na lista."
+ },
+ {
+  "item": "A3",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6881,
+  "lon": -51.1166,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "A 75 m do item A4 (já executado pela SEMA): conferir se é outra nascente."
+ },
+ {
+  "item": "A4",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6883,
+  "lon": -51.1173,
+  "situacao": "executada",
+  "item_sema": 14,
+  "nota": ""
+ },
+ {
+  "item": "A5",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6901,
+  "lon": -51.1167,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "A6",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6954,
+  "lon": -51.1113,
+  "situacao": "executada",
+  "item_sema": 15,
+  "nota": ""
+ },
+ {
+  "item": "A7",
+  "area": "Banco da Terra",
+  "brigada": null,
+  "lat": -23.6952,
+  "lon": -51.1096,
+  "situacao": "executada",
+  "item_sema": 16,
+  "nota": ""
+ },
+ {
+  "item": "B01",
+  "area": "Assentamento Eli Vive",
+  "brigada": "06",
+  "lat": -23.5971,
+  "lon": -51.0507,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B02",
+  "area": "Assentamento Eli Vive",
+  "brigada": "08",
+  "lat": -23.6167,
+  "lon": -51.0529,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B03",
+  "area": "Assentamento Eli Vive",
+  "brigada": "09",
+  "lat": -23.5995,
+  "lon": -51.02,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B04",
+  "area": "Assentamento Eli Vive",
+  "brigada": "09",
+  "lat": -23.6018,
+  "lon": -51.0203,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B05",
+  "area": "Assentamento Eli Vive",
+  "brigada": "03",
+  "lat": -23.6045,
+  "lon": -51.012,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B06",
+  "area": "Assentamento Eli Vive",
+  "brigada": "10",
+  "lat": -23.6091,
+  "lon": -51.0075,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Mesmo lote do B07, mas a 1,1 km de distância: conferir a coordenada."
+ },
+ {
+  "item": "B07",
+  "area": "Assentamento Eli Vive",
+  "brigada": "10",
+  "lat": -23.619,
+  "lon": -51.0077,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Mesmo lote do B06, mas a 1,1 km de distância: conferir a coordenada."
+ },
+ {
+  "item": "B08",
+  "area": "Assentamento Eli Vive",
+  "brigada": "03",
+  "lat": -23.6106,
+  "lon": -51.0322,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Mesmo lote do B09, a cerca de 100 m: provavelmente duas nascentes no lote."
+ },
+ {
+  "item": "B09",
+  "area": "Assentamento Eli Vive",
+  "brigada": "03",
+  "lat": -23.6111,
+  "lon": -51.033,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Mesmo lote do B08, a cerca de 100 m: provavelmente duas nascentes no lote."
+ },
+ {
+  "item": "B10",
+  "area": "Assentamento Eli Vive",
+  "brigada": "08",
+  "lat": -23.6241,
+  "lon": -51.0263,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Mesmo lote e a 10 m do B11: provavelmente a mesma nascente."
+ },
+ {
+  "item": "B11",
+  "area": "Assentamento Eli Vive",
+  "brigada": "08",
+  "lat": -23.6241,
+  "lon": -51.0262,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Mesmo lote e a 10 m do B10: provavelmente a mesma nascente."
+ },
+ {
+  "item": "B12",
+  "area": "Assentamento Eli Vive",
+  "brigada": "07",
+  "lat": -23.6418,
+  "lon": -51.0341,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B13",
+  "area": "Assentamento Eli Vive",
+  "brigada": "10",
+  "lat": -23.6222,
+  "lon": -51.0172,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": ""
+ },
+ {
+  "item": "B14",
+  "area": "Assentamento Eli Vive",
+  "brigada": "02",
+  "lat": -23.6496,
+  "lon": -51.0574,
+  "situacao": "candidata",
+  "item_sema": null,
+  "nota": "Latitude impressa como -2123.6496 na lista; corrigida para -23.6496."
+ }
+]
