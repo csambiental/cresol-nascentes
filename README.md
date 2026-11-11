@@ -10,7 +10,7 @@ Realização: Cresol · Execução: CS Consultoria Ambiental · Apoio: Instituto
 
 - **Laudo de vistoria do Projeto Broto d'Água (Londrina)** – 42 pontos; coordenadas, bacia, bairro, diagnóstico, recomendações e referência ao laudo fotográfico transcritos do documento original.
 - **Lista de nascentes executadas da SEMA Londrina** – 20 pontos com coordenadas, recebida em 10/11/2026. A SEMA é a fonte oficial destes dados.
-- **Lista de nascentes em áreas rurais (Banco da Terra e Assentamento Eli Vive)** – 21 pontos (A1–A7 e B01–B14), recebida em 11/11/2026. Nomes de beneficiários e números de lote não são publicados.
+- **Lista de nascentes em áreas rurais (Banco da Terra e Assentamento Eli Vive)** – 21 pontos (A1–A7 e B01–B14), recebida em 11/11/2026, com fotos do relatório de vistoria de 2024 (fev–mar/2024) na pasta `fotos/rurais/`. Nomes de beneficiários e números de lote não são publicados; rostos desfocados.
 - **Limite municipal** – IBGE (código 4113700).
 
 ## Dados abertos (pasta `dados/`)

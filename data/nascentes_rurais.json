@@ -7,7 +7,9 @@
   "lon": -51.1138,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Sem nome do responsável na lista."
+  "nota": "Sem nome do responsável na lista.",
+  "foto": "fotos/rurais/A1.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "A2",
@@ -17,7 +19,9 @@
   "lon": -51.115,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Sem nome do responsável na lista."
+  "nota": "Sem nome do responsável na lista.",
+  "foto": "fotos/rurais/A2.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "A3",
@@ -27,7 +31,9 @@
   "lon": -51.1166,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "A 75 m do item A4 (já executado pela SEMA): conferir se é outra nascente."
+  "nota": "A 75 m do item A4 (já executado pela SEMA): conferir se é outra nascente.",
+  "foto": "fotos/rurais/A3.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "A4",
@@ -37,7 +43,9 @@
   "lon": -51.1173,
   "situacao": "executada",
   "item_sema": 14,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/A4.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "A5",
@@ -47,7 +55,9 @@
   "lon": -51.1167,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/A5.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "A6",
@@ -57,7 +67,9 @@
   "lon": -51.1113,
   "situacao": "executada",
   "item_sema": 15,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/A6.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "A7",
@@ -67,7 +79,9 @@
   "lon": -51.1096,
   "situacao": "executada",
   "item_sema": 16,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/A7.jpg",
+  "foto_data": "08/02/2024"
  },
  {
   "item": "B01",
@@ -77,7 +91,9 @@
   "lon": -51.0507,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/B01.jpg",
+  "foto_data": "09/02/2024"
  },
  {
   "item": "B02",
@@ -87,7 +103,9 @@
   "lon": -51.0529,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/B02.jpg",
+  "foto_data": "09/02/2024"
  },
  {
   "item": "B03",
@@ -97,7 +115,9 @@
   "lon": -51.02,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/B03.jpg",
+  "foto_data": "09/02/2024"
  },
  {
   "item": "B04",
@@ -107,7 +127,9 @@
   "lon": -51.0203,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/B04.jpg",
+  "foto_data": "09/02/2024"
  },
  {
   "item": "B05",
@@ -117,7 +139,9 @@
   "lon": -51.012,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "Carimbo GPS da foto (-23,6046; -51,0104) a cerca de 160 m da coordenada da lista.",
+  "foto": "fotos/rurais/B05.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B06",
@@ -127,7 +151,9 @@
   "lon": -51.0075,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Mesmo lote do B07, mas a 1,1 km de distância: conferir a coordenada."
+  "nota": "Mesmo lote do B07, a 1,1 km. O carimbo GPS da foto (-23,5500; -50,7782) cai fora do município: conferir a coordenada em campo.",
+  "foto": "fotos/rurais/B06.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B07",
@@ -137,7 +163,9 @@
   "lon": -51.0077,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Mesmo lote do B06, mas a 1,1 km de distância: conferir a coordenada."
+  "nota": "Mesmo lote do B06, mas a 1,1 km de distância: conferir a coordenada.",
+  "foto": "fotos/rurais/B07.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B08",
@@ -147,7 +175,9 @@
   "lon": -51.0322,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Mesmo lote do B09, a cerca de 100 m: provavelmente duas nascentes no lote."
+  "nota": "Mesmo lote do B09, a cerca de 100 m: provavelmente duas nascentes no lote.",
+  "foto": "fotos/rurais/B08.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B09",
@@ -157,7 +187,9 @@
   "lon": -51.033,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Mesmo lote do B08, a cerca de 100 m: provavelmente duas nascentes no lote."
+  "nota": "Mesmo lote do B08, a cerca de 100 m: provavelmente duas nascentes no lote.",
+  "foto": "fotos/rurais/B09.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B10",
@@ -167,7 +199,9 @@
   "lon": -51.0263,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Mesmo lote e a 10 m do B11: provavelmente a mesma nascente."
+  "nota": "Mesmo lote e a 10 m do B11: provavelmente a mesma nascente.",
+  "foto": "fotos/rurais/B10.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B11",
@@ -177,7 +211,9 @@
   "lon": -51.0262,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Mesmo lote e a 10 m do B10: provavelmente a mesma nascente."
+  "nota": "Mesmo lote e a 10 m do B10: provavelmente a mesma nascente.",
+  "foto": "fotos/rurais/B11.jpg",
+  "foto_data": "19/02/2024"
  },
  {
   "item": "B12",
@@ -187,7 +223,9 @@
   "lon": -51.0341,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/B12.jpg",
+  "foto_data": "28/03/2024"
  },
  {
   "item": "B13",
@@ -197,7 +235,9 @@
   "lon": -51.0172,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": ""
+  "nota": "",
+  "foto": "fotos/rurais/B13.jpg",
+  "foto_data": "28/03/2024"
  },
  {
   "item": "B14",
@@ -207,6 +247,8 @@
   "lon": -51.0574,
   "situacao": "candidata",
   "item_sema": null,
-  "nota": "Latitude impressa como -2123.6496 na lista; corrigida para -23.6496."
+  "nota": "Latitude impressa como -2123.6496 na lista; corrigida para -23.6496.",
+  "foto": "fotos/rurais/B14.jpg",
+  "foto_data": "28/03/2024"
  }
 ]

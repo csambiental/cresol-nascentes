@@ -183,15 +183,16 @@ function fichaSema(s){
 }
 
 function popupRural(r){return `<div class="popup"><span class="status-badge" style="background:${r.situacao==='executada'?'#2e9e5b':'#3b82f6'};color:#fff">${r.situacao==='executada'?'Executada pela SEMA':'Candidata à Ação'}</span>
-  <h3>${r.item} – ${esc(ruralLabel(r))}</h3><p>${r.lat.toFixed(4)}, ${r.lon.toFixed(4)}</p>${r.item_sema?`<p>Item ${r.item_sema} da lista de executadas da SEMA.</p>`:''}${r.nota?`<p class="popup-hint">${esc(r.nota)}</p>`:''}</div>`}
+  <h3>${r.item} – ${esc(ruralLabel(r))}</h3>${r.foto?`<img src="${r.foto}" alt="Foto da nascente ${r.item}" style="width:100%;border-radius:6px;margin:4px 0" loading="lazy">`:''}<p>${r.lat.toFixed(4)}, ${r.lon.toFixed(4)}</p>${r.item_sema?`<p>Item ${r.item_sema} da lista de executadas da SEMA.</p>`:''}${r.nota?`<p class="popup-hint">${esc(r.nota)}</p>`:''}</div>`}
 function fichaRural(r){
   atual='R'+r.item;const f=$('cardFicha');f.hidden=false;
   f.innerHTML=`<div class="ficha-top"><div><span class="status-tag" style="background:${r.situacao==='executada'?'#2e9e5b':'#3b82f6'};color:#fff">${r.situacao==='executada'?'Executada pela SEMA':'Candidata à Ação'}</span>
     <h2>${r.item} – ${esc(ruralLabel(r))}</h2></div><button class="close-ficha" type="button" id="fechar">Fechar</button></div>
     <dl class="ficha-dl" style="margin-top:8px"><dt>Área</dt><dd>${esc(r.area)}</dd>${r.brigada?`<dt>Brigada</dt><dd>${r.brigada}</dd>`:''}
     <dt>Coordenadas</dt><dd><a class="link" href="https://www.google.com/maps?q=${r.lat},${r.lon}" target="_blank" rel="noopener">${r.lat.toFixed(4)}, ${r.lon.toFixed(4)}</a></dd>
-    <dt>Fonte</dt><dd>Lista de nascentes em áreas rurais (Banco da Terra e Eli Vive)</dd>${r.item_sema?`<dt>Lista SEMA</dt><dd>Executada · item ${r.item_sema}</dd>`:''}</dl>
-    ${r.nota?`<p class="nota">${esc(r.nota)}</p>`:''}`;
+    <dt>Fonte</dt><dd>Relatório de nascentes Eli Vive e Banco da Terra (2024)</dd>${r.item_sema?`<dt>Lista SEMA</dt><dd>Executada · item ${r.item_sema}</dd>`:''}</dl>
+    ${r.nota?`<p class="nota">${esc(r.nota)}</p>`:''}
+    ${r.foto?`<p class="ficha-sub">Foto da vistoria (${esc(r.foto_data)})</p><a href="${r.foto}" target="_blank" rel="noopener" title="Abrir a foto em tamanho original"><img src="${r.foto}" alt="Foto da nascente ${r.item} na vistoria de ${esc(r.foto_data)}" style="width:100%;border-radius:8px;display:block"></a><span class="fonte">Relatório de nascentes Eli Vive e Banco da Terra, 2024. Clique para ampliar.</span>`:''}`;
   $('fechar').onclick=()=>{f.hidden=true;atual=null;lista()};lista();f.scrollIntoView({block:'nearest',behavior:'smooth'});
 }
 function linha(el,ic,nome,meta,on){const b=document.createElement('button');b.type='button';b.className='camada-row'+(on?' ativo':'');
